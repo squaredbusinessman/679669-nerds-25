@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
 
-  </body>
+<body>
+  <header>
+    <nav class="main-nav">
+      <a href="#">
+        <img src="img/monocrome-logo.svg" width="160" alt="Нёрдс-логотип">
+      </a>
+      <ul class="site-nav">
+        <li><a href="workspace.html">Студия</a></li>
+        <li><a href="reviews.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="shop-basket">
+        <a href="basket.html">Корзина</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Дальше - Блок слайдера -->
+    <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+    <section class="slider">
+      <a class="button" href="workspace.html">Узнать больше</a>
+      <ul class="slide-list">
+        <li class="slide first">
+          <p><b>Долго, дорого,<br>скрупулезно.</b>
+          Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
+          </p>
+          <img src="img/slider-1.png" width="698" alt="слайд №1">
+        </li>
+        <li class="slide second">
+          <p><b>Любим математику<br>как никто другой</b>
+          Hикакого креатива, только математические формулы<br>для расчета идеальных пропорций.
+          </p>
+          <img src="img/slider-2.png" width="698" alt="слайд №2">
+        </li>
+        <li class="slide third">
+          <p><b>Только ночь,<br>только хардкор</b>
+          Работать днём, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+          </p>
+          <img src="img/slider-3.png" width="698" alt="слайд №3">
+        </li>
+      </ul>
+      <!-- <span class="radio-btn">слайдерные радиокнопки</span> -->
+      </section>
+      <!-- ниже - преимущества  -->
+      <h2 class="visually-hidden">Преимущества</h2>
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item">
+            <img src="img/web-site.png" width="300px" alt="Веб-сайты">
+            <p>
+              <h3 class="features-title">Веб-Сайты</h3>
+              Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <a class="feature-order" href="#">Заказать</a>
+          </li>
+          <li class="features-item">
+            <img src="img/applications.png" width="300px" alt="Приложения">
+            <p>
+              <h3 class="features-title">Приложения</h3>
+              Покорите топ-10 приложений в AppStore и Google Play
+            </p>
+            <a class="feature-order" href="#">Заказать</a>
+          </li>
+          <li class="features-item">
+            <img src="img/presentations.png" width="300px" alt="Презентации">
+            <p>
+              <h3 class="features-title">Презентации</h3>
+              Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="feature-order" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <!-- Ниже блок - который по моему мнению можно охарактеризовать, как "о нас" -->
+      <section class="about-company">
+        <h2 class="visually-hidden">О компании</h2>
+        <!-- здесь думаю сделать 2 блока, возможно дива, чтобы потом на сетке их расположить рядом как колонки -->
+        <div class="words-about">
+          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <!-- не могу придумать адекватное название для списка с работой, за которую берется студия  -->
+          <p>
+            Выполняем заказы на разработку:
+            <ul>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+<!-- есть еще вопрос по этому списку, в макете там красные черточки перед элементами списка, их наверное лучше сделать потом фоном через CSS? -->
+          </p>
+        </div>
+        <div><!-- также не получилось придумать класс -->
+          <img src="img/color-logo.png" width="360" alt="Цветной логотип нёрдс">
+          <p><b>с 2004 года Любим точность во всем:</b></p>
+          <table>
+            <tr>
+              <td>146<span class="interest-about">%</span></td>
+              <td>100<span class="interest-about">%</span></td>
+              <td>50<span class="interest-about">%</span></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+          <h3 class="visually-hidden">Наши партнёры<h3>
+          <ul class="partners">
+            <li>
+              <img src="img/html-academy-logo.png" width="140" alt="html-academy">
+            </li>
+            <li>
+              <img src="img/barber-borodinski-logo.png" width="124" alt="barbershop-borodinski">
+            </li>
+            <li>
+              <img src="img/pink-logo.png" width="143" alt="pink">
+            </li>
+            <li>
+              <img src="img/mishka-logo.png" width="130" alt="mishka">
+            </li>
+        </div>
+        <!-- Ещё один нюанс - про карту с адресом, она повторяется и на главной и на вложенной страницах, правильнее будет привязать этот блок к футеру? -->
+        <section class="map">
+          <!-- карту позже -->
+          <div class="map-contacts">
+            <p>
+              <b>NЁRDS DESIGN STUDIO</b>
+              191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8
+
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="button map-modal" href="#">Напишите нам</a>
+          </div>
+        </section>
+      </section>
+  </main>
+      <footer>
+        <ul class="social-networks">
+          <li class="social-vk">
+            <a href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="social-fb">
+            <a href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social-insta">
+            <a href="#">Мы в Инстаграм</a>
+          </li>
+        </ul>
+        <p><strong>Давайте дружить, это выгодно!</strong>Скидка 10% для друзей из социальных сетей.</p>
+        <!-- Я выбрал тут стронг, потому что мне показалось, что юзеру будет интересна скидка в принципе, поэтому, возможно, стоит выделить этот момент. -->
+      </footer>
+
+      <section class="modal"></section>
+      <!-- модалку входа позже -->
+
+
+
+</body>
+
 </html>
