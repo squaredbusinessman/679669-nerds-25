@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
     <nav class="main-nav">
       <a href="#">
         <img src="img/monocrome-logo.svg" width="160" alt="Нёрдс-логотип">
@@ -57,25 +57,25 @@
           <li class="features-item">
             <img src="img/web-site.png" width="300px" alt="Веб-сайты">
             <p>
-              <h3 class="features-title">Веб-Сайты</h3>
+              <h3>Веб-Сайты</h3>
               Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <a class="feature-order" href="#">Заказать</a>
+            <a href="#">Заказать</a>
           </li>
           <li class="features-item">
             <img src="img/applications.png" width="300px" alt="Приложения">
             <p>
-              <h3 class="features-title">Приложения</h3>
+              <h3>Приложения</h3>
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <a class="feature-order" href="#">Заказать</a>
+            <a href="#">Заказать</a>
           </li>
           <li class="features-item">
             <img src="img/presentations.png" width="300px" alt="Презентации">
             <p>
-              <h3 class="features-title">Презентации</h3>
+              <h3>Презентации</h3>
               Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="feature-order" href="#">Заказать</a>
+            <a href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -88,10 +88,9 @@
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <!-- не могу придумать адекватное название для списка с работой, за которую берется студия  -->
           <p>
             Выполняем заказы на разработку:
-            <ul>
+            <ul class="our-capabilities">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -99,16 +98,16 @@
 <!-- есть еще вопрос по этому списку, в макете там красные черточки перед элементами списка, их наверное лучше сделать потом фоном через CSS? -->
           </p>
         </div>
-        <div><!-- также не получилось придумать класс -->
+        <div class="business-card">
           <img src="img/color-logo.png" width="360" alt="Цветной логотип нёрдс">
           <p><b>с 2004 года Любим точность во всем:</b></p>
           <table>
-            <tr>
-              <td>146<span class="interest-about">%</span></td>
-              <td>100<span class="interest-about">%</span></td>
-              <td>50<span class="interest-about">%</span></td>
+            <tr class="company-results">
+              <td>146<span class="percentage">%</span></td>
+              <td>100<span class="percentage">%</span></td>
+              <td>50<span class="percentage">%</span></td>
             </tr>
-            <tr>
+            <tr class="company-skills">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
@@ -146,7 +145,7 @@
         </section>
       </section>
   </main>
-      <footer>
+      <footer class="main-footer">
         <ul class="social-networks">
           <li class="social-vk">
             <a href="#">Мы в Вконтакте</a>
