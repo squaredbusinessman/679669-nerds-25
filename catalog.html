@@ -2,208 +2,208 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="catalog-header">
-        <nav class="main-nav">
-            <a class="header-logo" href="index.html">
-                <img src="img/svg/monocrome-logo.svg" width="160" alt="Нёрдс-логотип">
-            </a>
-            <ul class="site-nav">
-                <li><a href="workspace.html">Студия</a></li>
-                <li><a href="reviews.html">Клиенты</a></li>
-                <li><a>Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <div class="shop-basket">
-                <a href="basket.html">Корзина</a>
-            </div>
-        </nav>
-    </header>
+  <header class="catalog-header">
+    <nav class="main-nav">
+      <a class="header-logo" href="index.html">
+        <img src="img/svg/monocrome-logo.svg" width="160" alt="Нёрдс-логотип">
+      </a>
+      <ul class="site-nav">
+        <li><a href="workspace.html">Студия</a></li>
+        <li><a href="reviews.html">Клиенты</a></li>
+        <li><a>Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="shop-basket">
+        <a href="basket.html">Корзина</a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-        <section class="catalog-filter">
-            <!-- далее будет блок с фильтрами для готовых шаблонов, ренджслайдер пока такой, потом будет нормальный) -->
-            <div class="range-slider">
-                <p>Стоимость:</p>
-                <input type="range" id="cost-range" name="costrange" min="0" max="15000" step="1">
-                <p>от 0 до 15000</p>
-            </div>
-            <form action="/echo" method="post">
-              <fieldset></fieldset>
-                <legend class="visually-hidden">Фильтры поиска</legend>
-                <p>Сетка:</p>
-                <ul class="filter-grid">
-                    <li>
-                        <label>
-                            <input type="radio" name="grid" value="Адаптивная" checked>
-                            Адаптивная
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="grid" value="Фиксированная">
-                            Фиксированная
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="grid" value="Резиновая">
-                            Резиновая
-                        </label>
-                    </li>
-                </ul>
-                <ul class="filter-content">
-                    <li>
-                        <input type="checkbox" name="slider" id="slider-feature" checked>
-                        <label for="slider-feature">Слайдер</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="features" id="features-block-feature">
-                        <label for="features-block-feature">Блок преимуществ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="news" id="news-feature" checked>
-                        <label for="news-feature">Новости</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="gallary" id="gallary-feature">
-                        <label for="gallary-feature">Галерея</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="basket" id="basket-feature">
-                        <label for="basket-feature">Корзина</label>
-                    </li>
-                </ul>
-                <button type="submit">Показать</button>
-            </form>
-        </section>
-        <section class="catalog-sorting">
-            <p>Сортировать:</p>
-            <ul class="sort">
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По названию</li>
-            </ul>
-        </section>
-        <section class="product-card">
-            <h2 class="visually-hidden">Карточки товаров</h2>
-            <ul class="card-list">
-                <li class="card-item">
-                    <a href="#">
-                        <img src="img/sedona-card.png"360" alt="sedona-card">
-                        <div class="card-hover">
-                            <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов.</p>
-                            <p class="buy-card">9900 руб.</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-item">
-                    <a href="#">
-                        <img src="img/pink-card.png" width="360" alt="pink-card">
-                        <div class="card-hover">
-                            <h3>Pink App</h3>
-                            <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <p class="buy-card">9900 руб.</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-item">
-                    <a href="#">
-                        <img src="img/barbershop-card.png" width="360" alt="barbersop-card">
-                        <div class="card-hover">
-                            <h3>Barbershop</h3>
-                            <p>Сайт салона красоты. Для мужчин, да.</p>
-                            <p class="buy-card">9900 руб.</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-item">
-                    <a href="#">
-                        <img src="img/mishka-card.png" width="360" alt="mishka-card">
-                        <div class="card-hover">
-                            <h3>Mishka</h3>
-                            <p>Интернет-магазин вязаных игрушек.</p>
-                            <p class="buy-card">9900 руб.</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-item">
-                    <a href="#">
-                        <img src="img/a-card.png" width="360" alt="aplus-card">
-                        <div class="card-hover">
-                            <h3>A Plus</h3>
-                            <p>Лендинг курсов повышения квалификации.</p>
-                            <p class="buy-card">9900 руб.</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="card-item">
-                    <a href="#">
-                        <img src="img/kvast-card.png" width="360" alt="kvast-card">
-                        <div class="card-hover">
-                            <h3>Kbact</h3>
-                            <p>Промо-сайт производителя крафтового кваса.</p>
-                            <p class="buy-card">9900 руб.</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="map">
-            <!-- для наглядости карта пока что будет картинкой, в дальнейшем хочу, чтобы она была интерактивной на javascript -->
-            <img src="img/map.png" width="1440" alt="карта">
-            <div class="map-contacts">
-                <p>
-                    <b>nёrds design studio</b>
-                    191186, Санкт-Петербург,
-                    ул. Б. Конюшенная, д. 19/8
-                    тел. +7 (812) 275-75-75
-                </p>
-                <a class="button map-modal" href="#">Напишите нам</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="catalog-footer">
-        <ul class="social-networks">
-            <li class="social-vk">
-                <a href="#">Мы в Вконтакте</a>
+  <main>
+    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    <section class="catalog-filter">
+      <!-- далее будет блок с фильтрами для готовых шаблонов, ренджслайдер пока такой, потом будет нормальный) -->
+      <form action="/echo" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Фильтры поиска</legend>
+          <div class="range-slider">
+            <p>Стоимость:</p>
+            <input type="range" id="cost-range" name="costrange" min="0" max="15000" step="1">
+            <p>от 0 до 15000</p>
+          </div>
+          <p>Сетка:</p>
+          <ul class="filter-grid">
+            <li>
+              <label>
+                <input type="radio" name="grid" value="Адаптивная" checked>
+                Адаптивная
+              </label>
             </li>
-            <li class="social-fb">
-                <a href="#">Мы в Фейсбуке</a>
+            <li>
+              <label>
+                <input type="radio" name="grid" value="Фиксированная">
+                Фиксированная
+              </label>
             </li>
-            <li class="social-insta">
-                <a href="#">Мы в Инстаграм</a>
+            <li>
+              <label>
+                <input type="radio" name="grid" value="Резиновая">
+                Резиновая
+              </label>
             </li>
-        </ul>
-        <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
-
-    </footer>
-
-    <section class="modal">
-        <form action="/echo" method="post">
-            <legend>Напишите нам</legend>
-            <label>Ваше имя:
-                <input type="text" placeholder="Имя Фамилия" autocomplete="on" required>
-            </label>
-            <label>Ваш e-mail:
-                <input type="email" placeholder="email@example.com" autocomplete="on" required>
-            </label>
-            <label>Текст письма:
-                <textarea name="feedback-letter" placeholder="В свободной форме"></textarea>
-            </label>
-            <button type="submit">Отправить</button>
-        </form>
+          </ul>
+          <ul class="filter-content">
+            <li>
+              <input type="checkbox" name="slider" id="slider-feature" checked>
+              <label for="slider-feature">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="features" id="features-block-feature">
+              <label for="features-block-feature">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="news-feature" checked>
+              <label for="news-feature">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallary" id="gallary-feature">
+              <label for="gallary-feature">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="basket-feature">
+              <label for="basket-feature">Корзина</label>
+            </li>
+          </ul>
+          <button type="submit">Показать</button>
+        </fieldset>
+      </form>
     </section>
+    <section class="catalog-sorting">
+      <p>Сортировать:</p>
+      <ul class="sort">
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По названию</li>
+      </ul>
+    </section>
+    <section class="product-card">
+      <h2 class="visually-hidden">Карточки товаров</h2>
+      <ul class="card-list">
+        <li class="card-item">
+          <a href="#">
+            <img src="img/sedona-card.png" 360" alt="sedona-card">
+            <div class="card-hover">
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов.</p>
+              <p class="buy-card">9900 руб.</p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="#">
+            <img src="img/pink-card.png" width="360" alt="pink-card">
+            <div class="card-hover">
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="buy-card">9900 руб.</p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="#">
+            <img src="img/barbershop-card.png" width="360" alt="barbersop-card">
+            <div class="card-hover">
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <p class="buy-card">9900 руб.</p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="#">
+            <img src="img/mishka-card.png" width="360" alt="mishka-card">
+            <div class="card-hover">
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязаных игрушек.</p>
+              <p class="buy-card">9900 руб.</p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="#">
+            <img src="img/a-card.png" width="360" alt="aplus-card">
+            <div class="card-hover">
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения квалификации.</p>
+              <p class="buy-card">9900 руб.</p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="#">
+            <img src="img/kvast-card.png" width="360" alt="kvast-card">
+            <div class="card-hover">
+              <h3>Kbact</h3>
+              <p>Промо-сайт производителя крафтового кваса.</p>
+              <p class="buy-card">9900 руб.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="map">
+      <!-- для наглядости карта пока что будет картинкой, в дальнейшем хочу, чтобы она была интерактивной на javascript -->
+      <img src="img/map.png" width="1440" alt="карта">
+      <div class="map-contacts">
+        <p>
+          <b>nёrds design studio</b>
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="button map-modal" href="#">Напишите нам</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="catalog-footer">
+    <ul class="social-networks">
+      <li class="social-vk">
+        <a href="#">Мы в Вконтакте</a>
+      </li>
+      <li class="social-fb">
+        <a href="#">Мы в Фейсбуке</a>
+      </li>
+      <li class="social-insta">
+        <a href="#">Мы в Инстаграм</a>
+      </li>
+    </ul>
+    <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+
+  <section class="modal">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2>Напишите нам</h2>
+      <label>Ваше имя:
+        <input type="text" placeholder="Имя Фамилия" autocomplete="on" required>
+      </label>
+      <label>Ваш e-mail:
+        <input type="email" placeholder="email@example.com" autocomplete="on" required>
+      </label>
+      <label>Текст письма:
+        <textarea name="feedback-letter" placeholder="В свободной форме"></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 
 
 </body>
