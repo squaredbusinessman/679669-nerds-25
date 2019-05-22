@@ -2,188 +2,186 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-nav">
-            <a href="#">
-                <img src="img/monocrome-logo.svg" width="160" alt="Нёрдс-логотип">
-            </a>
-            <ul class="site-nav">
-                <li><a href="workspace.html">Студия</a></li>
-                <li><a href="reviews.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <div class="shop-basket">
-                <a href="basket.html">Корзина</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Дальше - Блок слайдера -->
-        <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-        <section class="slider">
-            <h2 class="visually-hidden">Основные тезисы компании</h2>
-            <a class="button" href="workspace.html">Узнать больше</a>
-            <ul class="slide-list">
-                <li class="slide first">
-                    <p><b>Долго, дорого,<br>скрупулезно.</b>
-                        Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
-                    </p>
-                    <img src="img/slider-1.png" width="698" alt="слайд №1">
-                    <button class="slide-btn">Слайд-1</button>
-                </li>
-                <li class="slide second">
-                    <p><b>Любим математику<br>как никто другой</b>
-                        Hикакого креатива, только математические формулы<br>для расчета идеальных пропорций.
-                    </p>
-                    <img src="img/slider-2.png" width="698" alt="слайд №2">
-                    <button class="slide-btn">Слайд-2</button>
-                </li>
-                <li class="slide third">
-                    <p><b>Только ночь,<br>только хардкор</b>
-                        Работать днём, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
-                    </p>
-                    <img src="img/slider-3.png" width="698" alt="слайд №3">
-                    <button class="slide-btn">Слайд-3</button>
-                </li>
-            </ul>
-            <!-- <span class="radio-btn">слайдерные радиокнопки</span> -->
-        </section>
-        <!-- ниже - преимущества  -->
-        <h2 class="visually-hidden">Преимущества</h2>
-        <section class="features">
-            <ul class="features-list">
-                <li class="features-item">
-                    <img src="img/web-site.png" width="300px" alt="Веб-сайты">
-                    <p>
-                        <h3>Веб-Сайты</h3>
-                        Мир никогда не будет прежним после того как увидит ваш сайт!
-                    </p>
-                    <a href="#">Заказать</a>
-                </li>
-                <li class="features-item">
-                    <img src="img/applications.png" width="300px" alt="Приложения">
-                    <p>
-                        <h3>Приложения</h3>
-                        Покорите топ-10 приложений в AppStore и Google Play
-                    </p>
-                    <a href="#">Заказать</a>
-                </li>
-                <li class="features-item">
-                    <img src="img/presentations.png" width="300px" alt="Презентации">
-                    <p>
-                        <h3>Презентации</h3>
-                        Вы даже не подозреваете, насколько вы изумительны!
-                    </p>
-                    <a href="#">Заказать</a>
-                </li>
-            </ul>
-        </section>
-        <!-- Ниже блок - который по моему мнению можно охарактеризовать, как "о нас" -->
-        <section class="about-company">
-            <h2 class="visually-hidden">О компании</h2>
-            <!-- здесь думаю сделать 2 блока, возможно дива, чтобы потом на сетке их расположить рядом как колонки -->
-            <div class="words-about">
-                <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-                    превыше креатива. Работаем не покладая рук, как роботы.
-                </p>
-                <p>
-                    Выполняем заказы на разработку:
-                    <ul class="our-capabilities">
-                        <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для iOS и Android</li>
-                        <li>Слайдшоу и видео для корпоративных презентаций</li>
-                    </ul>
-                    <!-- есть еще вопрос по этому списку, в макете там красные черточки перед элементами списка, их наверное лучше сделать потом фоном через CSS? -->
-                </p>
-            </div>
-            <div class="business-card">
-                <img src="img/color-logo.png" width="360" alt="Цветной логотип нёрдс">
-                <p><b>с 2004 года Любим точность во всем:</b></p>
-                <table>
-                    <tr class="company-results">
-                        <td>146<span class="percentage">%</span></td>
-                        <td>100<span class="percentage">%</span></td>
-                        <td>50<span class="percentage">%</span></td>
-                    </tr>
-                    <tr class="company-skills">
-                        <td>Уровень самоотдачи</td>
-                        <td>Соблюдение сроков</td>
-                        <td>Минимальная предоплата</td>
-                    </tr>
-                </table>
-            </div>
-            <h3 class="visually-hidden">Наши партнёры<h3>
-                <ul class="partners">
-                    <li>
-                        <img src="img/html-academy-logo.png" width="140" alt="html-academy">
-                    </li>
-                    <li>
-                        <img src="img/barber-borodinski-logo.png" width="124" alt="barbershop-borodinski">
-                    </li>
-                    <li>
-                        <img src="img/pink-logo.png" width="143" alt="pink">
-                    </li>
-                    <li>
-                        <img src="img/mishka-logo.png" width="130" alt="mishka">
-                    </li>
-                </ul>
-                <!-- Ещё один нюанс - про карту с адресом, она повторяется и на главной и на вложенной страницах, правильнее будет привязать этот блок к футеру? -->
-                <section class="map">
-                <!-- карту позже -->
-                        <div class="map-contacts">
-                            <p>
-                                <b>NЁRDS DESIGN STUDIO</b>
-                                191186, Санкт-Петербург,
-                                ул. Б. Конюшенная, д. 19/8
-
-                                тел. +7 (812) 275-75-75
-                            </p>
-                            <a class="button map-modal" href="#">Напишите нам</a>
-                        </div>
-                    </section>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <ul class="social-networks">
-            <li class="social-vk">
-                <a href="#">Мы в Вконтакте</a>
-            </li>
-            <li class="social-fb">
-                <a href="#">Мы в Фейсбуке</a>
-            </li>
-            <li class="social-insta">
-                <a href="#">Мы в Инстаграм</a>
-            </li>
-        </ul>
-        <p><strong>Давайте дружить, это выгодно!</strong>Скидка 10% для друзей из социальных сетей.</p>
-        <!-- Я выбрал тут стронг, потому что мне показалось, что юзеру будет интересна скидка в принципе, поэтому, возможно, стоит выделить этот момент. -->
-    </footer>
-
-    <section class="modal">
-        <form action="/echo" method="post">
-            <legend>Напишите нам</legend>
-            <label>Ваше имя:
-                <input type="text" placeholder="Имя Фамилия" autocomplete="on" required>
-            </label>
-            <label>Ваш e-mail:
-                <input type="email" placeholder="email@example.com" autocomplete="on" required>
-            </label>
-            <label>Текст письма:
-            <textarea name="feedback-letter" placeholder="В свободной форме"></textarea>
-            </label>
-            <button type="submit">Отправить</button>
-        </form>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="#">
+        <img src="img/svg/monocrome-logo.svg" width="160" alt="Нёрдс-логотип">
+      </a>
+      <ul class="site-nav">
+        <li><a href="workspace.html">Студия</a></li>
+        <li><a href="reviews.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="shop-basket">
+        <a href="basket.html">Корзина</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Дальше - Блок слайдера -->
+    <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+    <section class="slider">
+      <h2 class="visually-hidden">Основные тезисы компании</h2>
+      <a class="button" href="workspace.html">Узнать больше</a>
+      <ul class="slide-list">
+        <li class="slide first">
+          <p><b>Долго, дорого,<br>скрупулезно.</b>
+            Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
+          </p>
+          <img src="img/slide-1.png" width="698" alt="слайд №1">
+          <button class="slide-btn">Слайд-1</button>
+        </li>
+        <li class="slide second">
+          <p><b>Любим математику<br>как никто другой</b>
+            Hикакого креатива, только математические формулы<br>для расчета идеальных пропорций.
+          </p>
+          <img src="img/slide-2.png" width="698" alt="слайд №2">
+          <button class="slide-btn">Слайд-2</button>
+        </li>
+        <li class="slide third">
+          <p><b>Только ночь,<br>только хардкор</b>
+            Работать днём, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+          </p>
+          <img src="img/slide-3.png" width="698" alt="слайд №3">
+          <button class="slide-btn">Слайд-3</button>
+        </li>
+      </ul>
+      <!-- <span class="radio-btn">слайдерные радиокнопки</span> -->
     </section>
+    <!-- ниже - преимущества  -->
+    <h2 class="visually-hidden">Преимущества</h2>
+    <section class="features">
+      <ul class="features-list">
+        <li class="features-item">
+          <img src="img/features-web.png" width="300px" alt="Веб-сайты">
+          <p>
+            <h3>Веб-Сайты</h3>
+            Мир никогда не будет прежним после того как увидит ваш сайт!
+          </p>
+          <a href="#">Заказать</a>
+        </li>
+        <li class="features-item">
+          <img src="img/features-app.png" width="300px" alt="Приложения">
+          <p>
+            <h3>Приложения</h3>
+            Покорите топ-10 приложений в AppStore и Google Play
+          </p>
+          <a href="#">Заказать</a>
+        </li>
+        <li class="features-item">
+          <img src="img/features-pres.png" width="300px" alt="Презентации">
+          <p>
+            <h3>Презентации</h3>
+            Вы даже не подозреваете, насколько вы изумительны!
+          </p>
+          <a href="#">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <!-- Ниже блок - который по моему мнению можно охарактеризовать, как "о нас" -->
+    <section class="about-company">
+      <h2 class="visually-hidden">О компании</h2>
+      <!-- здесь думаю сделать 2 блока, возможно дива, чтобы потом на сетке их расположить рядом как колонки -->
+      <div class="words-about">
+        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <p>Выполняем заказы на разработку: </p>
+        <ul class="our-capabilities">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        <!-- есть еще вопрос по этому списку, в макете там красные черточки перед элементами списка, их наверное лучше сделать потом фоном через CSS? -->
+      </div>
+      <div class="business-card">
+        <img src="img/business-card-logo.png" width="360" alt="Цветной логотип нёрдс">
+        <p><b>с 2004 года Любим точность во всем:</b></p>
+        <table>
+          <tr class="company-results">
+            <td>146<span class="percentage">%</span></td>
+            <td>100<span class="percentage">%</span></td>
+            <td>50<span class="percentage">%</span></td>
+          </tr>
+          <tr class="company-skills">
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="visually-hidden">Наши партнёры<h3>
+          <ul class="partners">
+            <li>
+              <img src="img/partners-academy.png" width="140" alt="html-academy">
+            </li>
+            <li>
+              <img src="img/partners-borodinski.png" width="124" alt="barbershop-borodinski">
+            </li>
+            <li>
+              <img src="img/partners-pink.png" width="143" alt="pink">
+            </li>
+            <li>
+              <img src="img/partners-mishka.png" width="130" alt="mishka">
+            </li>
+          </ul>
+          <!-- Ещё один нюанс - про карту с адресом, она повторяется и на главной и на вложенной страницах, правильнее будет привязать этот блок к футеру? -->
+          <section class="map">
+            <img src="img/map.png" width="1440" alt="карта">
+            <div class="map-contacts">
+              <p>
+                <b>NЁRDS DESIGN STUDIO</b>
+                191186, Санкт-Петербург,
+                ул. Б. Конюшенная, д. 19/8
 
+                тел. +7 (812) 275-75-75
+              </p>
+              <a class="button map-modal" href="#">Напишите нам</a>
+            </div>
+          </section>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="social-networks">
+      <li class="social-vk">
+        <a href="#">Мы в Вконтакте</a>
+      </li>
+      <li class="social-fb">
+        <a href="#">Мы в Фейсбуке</a>
+      </li>
+      <li class="social-insta">
+        <a href="#">Мы в Инстаграм</a>
+      </li>
+    </ul>
+    <p><strong>Давайте дружить, это выгодно!</strong>Скидка 10% для друзей из социальных сетей.</p>
+    <!-- Я выбрал тут стронг, потому что мне показалось, что юзеру будет интересна скидка в принципе, поэтому, возможно, стоит выделить этот момент. -->
+  </footer>
 
-
+  <section class="modal">
+    <form action="/echo" method="post">
+      <legend>Напишите нам</legend>
+      <label>Ваше имя:
+        <input type="text" placeholder="Имя Фамилия" autocomplete="on" required>
+      </label>
+      <label>Ваш e-mail:
+        <input type="email" placeholder="email@example.com" autocomplete="on" required>
+      </label>
+      <label>Текст письма:
+        <textarea name="feedback-letter" placeholder="В свободной форме"></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 
 </body>
 

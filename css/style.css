@@ -1,3 +1,21 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+  text-align: left;
+
+  background-color: #ffffff;
+
+}
+
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;

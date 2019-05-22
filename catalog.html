@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -34,6 +37,7 @@
                 <p>от 0 до 15000</p>
             </div>
             <form action="/echo" method="post">
+              <fieldset></fieldset>
                 <legend class="visually-hidden">Фильтры поиска</legend>
                 <p>Сетка:</p>
                 <ul class="filter-grid">
@@ -55,7 +59,7 @@
                             Резиновая
                         </label>
                     </li>
-                </ul>                       
+                </ul>
                 <ul class="filter-content">
                     <li>
                         <input type="checkbox" name="slider" id="slider-feature" checked>
@@ -79,7 +83,7 @@
                     </li>
                 </ul>
                 <button type="submit">Показать</button>
-            </form>            
+            </form>
         </section>
         <section class="catalog-sorting">
             <p>Сортировать:</p>
@@ -94,7 +98,7 @@
             <ul class="card-list">
                 <li class="card-item">
                     <a href="#">
-                        <img src="img/sedona-card.png" width="360" alt="sedona-card">
+                        <img src="img/sedona-card.png"360" alt="sedona-card">
                         <div class="card-hover">
                             <h3>Sedona</h3>
                             <p>Информационный сайт для туристов.</p>
