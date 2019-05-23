@@ -187,17 +187,21 @@
   </footer>
 
   <section class="modal">
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal-window" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
-      <label>Ваше имя:
-        <input type="text" placeholder="Имя Фамилия" autocomplete="on" required>
-      </label>
-      <label>Ваш e-mail:
-        <input type="email" placeholder="email@example.com" autocomplete="on" required>
-      </label>
-      <label>Текст письма:
-        <textarea name="feedback-letter" placeholder="В свободной форме"></textarea>
-      </label>
+      <p>
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="user-email" id="email-field" placeholder="email@example.com" autocomplete="on"
+          required>
+      </p>
+      <p>
+        <label for="letter-field">Текст письма:</label>
+        <textarea name="feedback-letter" id="letter-field" placeholder="В свободной форме" required></textarea>
+      </p>
       <button type="submit">Отправить</button>
     </form>
   </section>
