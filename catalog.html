@@ -32,37 +32,57 @@
     <section class="catalog-filter">
       <!-- далее будет блок с фильтрами для готовых шаблонов, ренджслайдер пока такой, потом будет нормальный) -->
       <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="visually-hidden">Фильтры поиска</legend>
-          <div class="range-slider">
-            <p>Стоимость:</p>
-            <input type="range" id="cost-range" name="costrange" min="0" max="15000" step="1">
-            <p>от 0 до 15000</p>
-          </div>
-          <p>Сетка:</p>
-          <div class="filter-grid">
+        <fieldset class="range-slider">
+          <legend>Стоимость:</legend>
+          <input type="range" id="cost-range" name="costrange" min="0" max="15000" step="1">
+          <p>
+            <label for="min-value">от</label>
+            <input type="text" name="range-value" id="min-value" value="0">
+          </p>
+          <p>
+            <label for="max-value">до</label>
+            <input type="text" name="range-value" id="max-value" value="15000">
+          </p>
+        </fieldset>
+        <fieldset class="filter-grid">
+          <legend>Сетка:</legend>
+          <p>
             <input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
             <label for="adaptive">Адаптивная</label>
+          </p>
+          <p>
             <input type="radio" name="grid" id="fixed" value="Фиксированная">
             <label for="fixed">Фиксированная</label>
+          </p>
+          <p>
             <input type="radio" name="grid" id="rubber" value="Резиновая">
             <label for="rubber">Резиновая</label>
-          </div>
-          <div class="filter-content">
-            <p>Особенности:</p>
+          </p>
+        </fieldset>
+        <fieldset class="filter-content">
+          <legend>Особенности:</legend>
+          <p>
             <input type="checkbox" name="slider" id="slider-feature" checked>
             <label for="slider-feature">Слайдер</label>
+          </p>
+          <p>
             <input type="checkbox" name="features" id="features-block-feature">
             <label for="features-block-feature">Блок преимуществ</label>
+          </p>
+          <p>
             <input type="checkbox" name="news" id="news-feature" checked>
             <label for="news-feature">Новости</label>
+          </p>
+          <p>
             <input type="checkbox" name="gallary" id="gallary-feature">
             <label for="gallary-feature">Галерея</label>
+          </p>
+          <p>
             <input type="checkbox" name="basket" id="basket-feature">
             <label for="basket-feature">Корзина</label>
-          </div>
-          <button type="submit">Показать</button>
+          </p>
         </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog-sorting">
