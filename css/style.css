@@ -16,7 +16,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-nav {
+  font-weight: 500;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -32,7 +44,41 @@ a {
   color: #000000;
 }
 
+.shop-basket a {
+  font-weight: 500;
+  color:#000000;
+
+}
+
+.site-nav a:hover,
+.shop-basket a:hover {
+  color: #fb565a;
+}
+
+.site-nav a:active,
+.shp-basket a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav a:focus,
+.shop-basket a:focus {
+  outline: none;
+  border-bottom: 2px solid #fb565a;
+}
+
 /*Стили слайдера должны быть тут*/
+.index-slider {
+  display: none;
+
+  background-color: #eeeeee;
+}
+
+.index-slides b {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55;
+  color: #000000;
+}
 
 /*Стили преимуществ ниже*/
 .features-list {
@@ -47,13 +93,141 @@ a {
   color: #000000;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.features-item a {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.features-item a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.web-item a {
+  background-color: #fb565a;
+}
+
+.web-item a:hover {
+  background-color: #e74246;
+}
+
+.web-item a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.app-item a {
+  background-color: #00ca74;
+}
+
+.app-item a:hover {
+  background-color: #00bc6c;
+}
+
+.app-item a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #00aa62;
+}
+
+.pres-item a {
+  background-color: #efc84a;
+}
+
+.pres-item a:hover {
+  background-color: #eab534;
+}
+
+.pres-item a:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
+}
+
+.index-colums {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about-company b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.capabilities-description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.our-capabilities {
+  list-style: none;
+}
+
+.business-card p {
+  font-weight: 700;
+  color: #000000;
+}
+
+.company-skills th {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.company-results td {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.map-contacts {
+  width: 319px;
+  min-height: 308px;
+}
+
+.map-contacts p {
+  width: 200px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.map-contacts b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.tel-number {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
 }
