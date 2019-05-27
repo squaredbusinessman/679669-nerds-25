@@ -12,21 +12,23 @@
 <body>
   <header class="main-header">
     <nav class="main-nav">
-      <a>
-        <img src="img/svg/monocrome-logo.svg" width="160" height="65" alt="Нёрдс-логотип">
-      </a>
-      <ul class="site-nav">
-        <li><a href="workspace.html">Студия</a></li>
-        <li><a href="reviews.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <div class="shop-basket">
-        <a href="basket.html">Корзина</a>
+      <div class="container">
+        <a class="main-header-logo">
+          <img src="img/svg/monocrome-logo.svg" width="160" height="65" alt="Нёрдс-логотип">
+        </a>
+        <ul class="site-nav">
+          <li><a href="workspace.html">Студия</a></li>
+          <li><a href="reviews.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="shop-basket">
+          <a href="basket.html">Корзина</a>
+        </div>
       </div>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <!-- Дальше - Блок слайдера -->
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
     <div class="index-slider">
@@ -135,22 +137,23 @@
               <img src="img/partners-academy.png" width="199" height="68" alt="логотип компании html-academy">
             </li>
             <li class="partner-logo">
-              <img src="img/partners-borodinski.png" width="209" height="90"
+              <img class="borodinski" src="img/partners-borodinski.png" width="209" height="90"
                 alt="логотип компании barbershop-borodinski">
             </li>
             <li class="partner-logo">
-              <img src="img/partners-pink.png" width="185" height="52" alt="логотип компании pink">
+              <img class="pink" src="img/partners-pink.png" width="185" height="52" alt="логотип компании pink">
             </li>
             <li class="partner-logo">
-              <img src="img/partners-mishka.png" width="173" height="84" alt="логотип компании mishka">
+              <img class="mishka" src="img/partners-mishka.png" width="173" height="84" alt="логотип компании mishka">
             </li>
           </ul>
     </section>
   </main>
 
   <footer class="main-footer">
-    <section class="map">
-      <img src="img/map.png" width="1440" height="416" alt="карта с указанием местоположения компании">
+    <div class="map">
+      <img class="interactive-map" src="img/map.png" width="1440" height="416"
+        alt="карта с указанием местоположения компании">
       <div class="map-contacts">
         <p>
           <b>NЁRDS DESIGN STUDIO</b>
@@ -160,19 +163,21 @@
         <a class="tel-number" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
         <a class="button map-modal" href="#">Напишите нам</a>
       </div>
-    </section>
-    <ul class="social-networks">
-      <li class="social-btn social-vk">
-        <a href="#">Мы в Вконтакте</a>
-      </li>
-      <li class="social-btn social-fb">
-        <a href="#">Мы в Фейсбуке</a>
-      </li>
-      <li class="social-btn social-insta">
-        <a href="#">Мы в Инстаграм</a>
-      </li>
-    </ul>
-    <p class="discount-phrase"><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    <div class="container">
+      <ul class="social-networks">
+        <li class="social-btn social-vk">
+          <a href="#">Мы в Вконтакте</a>
+        </li>
+        <li class="social-btn social-fb">
+          <a href="#">Мы в Фейсбуке</a>
+        </li>
+        <li class="social-btn social-insta">
+          <a href="#">Мы в Инстаграм</a>
+        </li>
+      </ul>
+      <p class="discount-phrase"><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
 
   <section class="modal">

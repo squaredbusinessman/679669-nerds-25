@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 
@@ -27,7 +31,42 @@ a {
   overflow: hidden;
 }
 
+/*кнопки*/
+.button {
+  padding: auto;
+  min-width: 200px;
+
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+/*конец кнопок*/
+
+ /*-------------------------------------------header------------------------------------------*/
+
+.main-header {
+  margin: 0 auto;
+ }
+
 .main-nav {
+  width: 100%;
+  display: flex;
+
   font-weight: 500;
   line-height: 30px;
   color: #000000;
@@ -36,12 +75,45 @@ a {
   background-color: #eeeeee;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  padding-top: 50px;
+}
+
 .site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  padding-top: 85px;
+
   list-style: none;
 }
 
 .site-nav a {
   color: #000000;
+}
+
+.shop-basket {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  padding-top: 85px;
 }
 
 .shop-basket a {
@@ -67,6 +139,7 @@ a {
 }
 
 /*Стили слайдера должны быть тут*/
+
 .index-slider {
   display: none;
 
@@ -81,8 +154,21 @@ a {
 }
 
 /*Стили преимуществ ниже*/
+.features {
+  margin: 80px 0;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.features-item {
+  width: 300px;
 }
 
 .features-item h3 {
@@ -143,9 +229,21 @@ a {
   background-color: #e5a722;
 }
 
+/* about company */
+
 .index-colums {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
+
+}
+
+.about-company {
+  padding-top: 40px;
+  width: 660px;
 }
 
 .about-company b {
@@ -166,6 +264,10 @@ a {
   list-style: none;
 }
 
+.business-card {
+  width: 360px;
+}
+
 .business-card p {
   font-weight: 700;
   color: #000000;
@@ -182,9 +284,33 @@ a {
   font-weight: 700;
   color: #000000;
 }
-
+/* не получилось сделать нижний борер у блока partners*/
 .partners-list {
   list-style: none;
+
+}
+
+.partner-logo {
+  min-width: 279px;
+  height: 180px;
+  background-color: #ffffff;
+  float: left;
+  position: relative;
+}
+
+.partner-logo:after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 52px;
+  background-color: #d7dcde;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.partner-logo:last-child:after {
+  display: none;
 }
 
 .partner-logo img {
@@ -198,7 +324,36 @@ a {
 .partner-logo img:active {
   opacity: 0.1;
 }
+
+.partner-logo .borodinski {
+  padding-left: 45px;
+
+}
+
+.partner-logo .pink {
+  padding-left: 55px;
+
+}
+
+.partner-logo .mishka {
+  padding-left: 60px;
+}
+
 /* далее футер */
+.interactive-map {
+  width: 1440px;
+  margin-left: 550px;
+  /* не догадался как сделать карту поцентру вне контейнера, поэтому вынес её из центровщика и задал левый маргин( */
+}
+
+.main-footer {
+  padding-bottom: 70px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
 .main-footer p {
   font-size: 16px;
   line-height: 22px;
@@ -214,8 +369,15 @@ a {
 }
 
 .map-contacts {
-  width: 319px;
-  min-height: 308px;
+  position: absolute;
+  right: 1480px;
+  top: 1310px;
+  width: 320px;
+  min-height: 310px;
+  padding-top: 55px;
+  padding-left: 50px;
+
+  background-color: #ffffff;
 }
 
 .map-contacts p {
@@ -232,38 +394,29 @@ a {
 }
 
 .tel-number {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
   text-decoration: none;
 }
- /*кнопки*/
-.button {
-  padding: auto;
-  min-width: 200px;
 
-  font: inherit;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #ffffff;
-
-  background-color: #fb565a;
+.map-modal {
+  margin-bottom: 45px;
 }
 
-.button:hover {
-  background-color: #e74246;
-}
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  background-color: #d7373b;
-}
-/*конец кнопок*/
 .social-networks {
+  display: flex;
+
+  width: 260px;
+  margin: 0;
+  margin-right: 140px;
+  padding-top: 100px;
   list-style: none;
+}
+.social-btn {
+  width: 80px;
 }
 
 .social-btn a {
@@ -272,13 +425,17 @@ a {
   background-color: #eeeeee;
 }
 
+.discount-phrase {
+  width: 560px;
+  padding-top: 80px;
+}
 /* Модальные окна */
 
 .modal {
   display: none;
 }
 
-/*доп. стили каталога*/
+/*-----------------------------------------------доп. стили каталога----------------------------------------*/
 
 /*header*/
 
