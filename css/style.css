@@ -445,7 +445,7 @@ a {
  }
 
  .card-hover {
-   width: 100%;
+   width: 100% ;
    box-sizing: border-box;
    padding: auto;
    position: absolute;
@@ -453,8 +453,6 @@ a {
    font-size: 16px;
    line-height: 18px;
    text-align: center;
-   align-content: center;
-   align-items: center;
    color: #666666;
    background-color: #eeeeee;
    display: none;
