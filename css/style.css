@@ -281,11 +281,11 @@ a {
 
 /*header*/
 
-.main-nav a:hover {
+.inner-nav a:hover {
   opacity: 0.8;
 }
 
-.main-nav a:active {
+.inner-nav a:active {
   opacity: 0.3;
 }
 
