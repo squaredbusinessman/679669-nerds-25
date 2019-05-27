@@ -187,6 +187,32 @@ a {
   list-style: none;
 }
 
+.partner-logo img {
+  opacity: 0.2;
+}
+
+.partner-logo img:hover {
+  opacity: 1;
+}
+
+.partner-logo img:active {
+  opacity: 0.1;
+}
+/* далее футер */
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+
+}
+
+.main-footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
 .map-contacts {
   width: 319px;
   min-height: 308px;
@@ -231,3 +257,245 @@ a {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
+
+.social-networks {
+  list-style: none;
+}
+
+.social-btn a {
+  color: #ffffff;
+
+  background-color: #eeeeee;
+}
+
+/* Модальные окна */
+
+.modal {
+  display: none;
+}
+
+/*доп. стили каталога*/
+
+/*header*/
+
+.main-nav a:hover {
+  opacity: 0.8;
+}
+
+.main-nav a:active {
+  opacity: 0.3;
+}
+
+/*main*/
+
+.catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.range-slider legend {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.range-slider input {
+  line-height: 22px;
+  text-align: center;
+  border: none;
+  background-color: #eeeeee;
+}
+
+.range-slider label {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.filter-grid legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-grid p {
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-grid input {
+  opacity: 0.4;
+}
+
+.filter-grid input:hover {
+  opacity: 1;
+}
+
+.filter-grid input:disabled {
+  opacity: 0.1;
+}
+
+.filter-grid label:disabled {
+  color:rgba(40, 49, 54, 0.3);
+}
+
+.filter-content legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-content p {
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-content input {
+  opacity: 0.4;
+}
+
+.filter-content input:hover {
+  opacity: 1;
+}
+
+.filter-content input:disabled {
+  opacity: 0.1;
+}
+
+.filter-content label:disabled {
+  color:rgba(40, 49, 54, 0.3);
+}
+
+.catalog-filter button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.catalog-filter button:hover {
+  background-color: #dfdfdf;
+}
+
+.catalog-filter button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+.catalog-sorting p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+
+.sorting {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting:active:focus {
+  color: #000000;
+}
+ /*дальше карточки товаров*/
+
+ .card-item {
+   display: inline-block;
+   background-color: #ffffff;
+   width: 360px;
+   position: relative;
+   font-size 0;
+ }
+
+ .card-item:hover .card-hover {
+   display: block;
+ }
+
+ .card-hover {
+   width: 100%;
+   box-sizing: border-box;
+   padding: auto;
+   position: absolute;
+   top: 345px;
+   font-size: 16px;
+   line-height: 18px;
+   text-align: center;
+   color: #666666;
+   background-color: #eeeeee;
+   display: none;
+ }
+
+ .card-hover h3 {
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: 700;
+   text-align: center;
+   color: #000000;
+ }
+
+ .card-hover h3:hover {
+   color: #fb565a;
+ }
+
+ .card-hover h3:active {
+   color: rgba(0, 0, 0, 0.3);
+ }
+ .card-hover p {
+   width: 225px;
+   margin-left: 70px;
+ }
+
+/*"браузер" вокруг карточек товаров */
+
+.browser-card {
+  margin: auto;
+  width: 360px;
+  height: 576px;
+  border: 1px solid rgba(0, 1, 1, 0.1);
+  position: relative;
+}
+
+.browser-card:before {
+  content: '⬤ ⬤ ⬤';
+  font-size: 17px;
+  position: absolute;
+  height: 40px;
+  top: -40px;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+  color: #ffffff;
+}
+
+.browser-card:hover:before {
+  background-color: darkgray;
+}
+
+/* THAT'S ALL FOLKS */
