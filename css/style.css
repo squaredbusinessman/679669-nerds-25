@@ -238,8 +238,10 @@ a {
 }
  /*кнопки*/
 .button {
-  font: inherit;
+  padding: auto;
+  min-width: 200px;
 
+  font: inherit;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -434,7 +436,7 @@ a {
    width: 360px;
    position: relative;
    font-size: 0px;
-   border-top: 1px solid transparent;
+
  }
 
  .card-item:hover .card-hover {
@@ -450,6 +452,8 @@ a {
    font-size: 16px;
    line-height: 18px;
    text-align: center;
+   align-content: center;
+   align-items: center;
    color: #666666;
    background-color: #eeeeee;
    display: none;
@@ -471,15 +475,16 @@ a {
  .card-hover h3:active {
    color: rgba(0, 0, 0, 0.3);
  }
- .card-hover p {
-   width: 225px;
-   margin-left: 70px;
+ .card-hover  .card-description {
+   width: 100%;
+
  }
 
 /*"браузер" вокруг карточек товаров */
 
 .browser-card {
   margin: auto;
+
   width: 360px;
   height: 576px;
   border: 1px solid rgba(0, 1, 1, 0.1);
