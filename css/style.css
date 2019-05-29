@@ -33,10 +33,14 @@ a {
 
 /*кнопки*/
 .button {
-  padding: auto;
+  display: inline-block;
   min-width: 200px;
 
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   font: inherit;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -49,11 +53,12 @@ a {
   background-color: #e74246;
 }
 
-.button:active {
+.button:active:focus {
   color: rgba(255, 255, 255, 0.3);
 
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
+  border-radius: 5px;
 }
 /*конец кнопок*/
 
@@ -89,7 +94,7 @@ a {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .site-nav {
@@ -100,7 +105,7 @@ a {
   width: 440px;
   margin: 0;
   padding: 0;
-  padding-top: 85px;
+  margin-top: 85px;
 
   list-style: none;
 }
@@ -113,7 +118,7 @@ a {
   width: 180px;
   margin: 0;
   padding: 0;
-  padding-top: 85px;
+  margin-top: 85px;
 }
 
 .shop-basket a {
@@ -149,7 +154,7 @@ a {
 .index-slides b {
   font-size: 55px;
   font-weight: 500;
-  line-height: 55;
+  line-height: 55px;
   color: #000000;
 }
 
@@ -368,10 +373,37 @@ a {
   color: #000000;
 }
 
+.map-contacts h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.map-contacts p {
+  display: inline-block;
+  width: 200px;
+  line-height: 18px;
+  color: #666666;
+}
+
 .map-contacts {
   position: absolute;
   right: 1480px;
   top: 1310px;
+  width: 320px;
+  min-height: 310px;
+  padding: 50px;
+
+
+  background-color: #ffffff;
+}
+
+.inner-map-contacts {
+  position: absolute;
+  right: 1480px;
+  top: 2200px;
   width: 320px;
   min-height: 310px;
   padding-top: 55px;
@@ -380,21 +412,10 @@ a {
   background-color: #ffffff;
 }
 
-.map-contacts p {
-  width: 200px;
-  line-height: 18px;
-  color: #666666;
-}
-
-.map-contacts b {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-}
-
 .tel-number {
-  display: block;
+  display: inline-block;
+  margin-bottom: 40px;
+
   font-size: 16px;
   line-height: 18px;
   color: #666666;
