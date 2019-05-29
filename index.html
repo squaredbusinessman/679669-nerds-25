@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <div class="container">
-        <a class="main-header-logo">
+        <a class="header-logo">
           <img src="img/svg/monocrome-logo.svg" width="160" height="65" alt="Нёрдс-логотип">
         </a>
         <ul class="site-nav">
@@ -22,78 +22,83 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <div class="shop-basket">
-          <a href="basket.html">Корзина</a>
-        </div>
+        <a class="shop-basket" href="basket.html">Корзина</a>
       </div>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <!-- Дальше - Блок слайдера -->
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-    <div class="index-slider">
-      <input type="radio" name="point" id="slide1" checked>
-      <input type="radio" name="point" id="slide2">
-      <input type="radio" name="point" id="slide3">
-      <div class="slider">
-        <div class="index-slides slide1">
-          <p><b>Долго, дорого,<br>скрупулезно.</b>
-            Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
-          </p>
-          <a class="button" href="workspace.html">Узнать больше</a>
+    <div class="slider-wrapper">
+      <div class="container">
+        <div class="index-slider">
+          <input type="radio" name="point" id="slide1" checked>
+          <input type="radio" name="point" id="slide2">
+          <input type="radio" name="point" id="slide3">
+          <div class="slider">
+            <div class="index-slides slide1">
+              <p><b>Долго, дорого,<br>скрупулезно.</b>
+                Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
+              </p>
+              <a class="button" href="workspace.html">Узнать больше</a>
+            </div>
+            <div class="index-slides slide2">
+              <p><b>Любим математику<br>как никто другой</b>
+                Hикакого креатива, только математические формулы<br>для расчета идеальных пропорций.
+              </p>
+              <a class="button" href="workspace.html">Узнать больше</a>
+            </div>
+            <div class="index-slides slide3">
+              <p><b>Только ночь,<br>только хардкор</b>
+                Работать днём, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+              </p>
+              <a class="button" href="workspace.html">Узнать больше</a>
+            </div>
+          </div>
+          <div class="controls">
+            <label for="slide1">Слайд-1</label>
+            <label for="slide2">Слайд-2</label>
+            <label for="slide3">Слайд-3</label>
+          </div>
         </div>
-        <div class="index-slides slide2">
-          <p><b>Любим математику<br>как никто другой</b>
-            Hикакого креатива, только математические формулы<br>для расчета идеальных пропорций.
-          </p>
-          <a class="button" href="workspace.html">Узнать больше</a>
-        </div>
-        <div class="index-slides slide3">
-          <p><b>Только ночь,<br>только хардкор</b>
-            Работать днём, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
-          </p>
-          <a class="button" href="workspace.html">Узнать больше</a>
-        </div>
-      </div>
-      <div class="controls">
-        <label for="slide1">Слайд-1</label>
-        <label for="slide2">Слайд-2</label>
-        <label for="slide3">Слайд-3</label>
       </div>
     </div>
     <!-- ниже - преимущества  -->
     <h2 class="visually-hidden">Преимущества</h2>
-    <section class="features">
-      <ul class="features-list">
-        <li class="features-item web-item">
-          <img src="img/features-web.png" width="300" height="146" alt="Ноутбук с открытым веб-сайтом">
-          <h3>Веб-Сайты</h3>
-          <p>
-            Мир никогда не будет прежним после того как увидит ваш сайт!
-          </p>
-          <a href="#">Заказать</a>
-        </li>
-        <li class="features-item app-item">
-          <img src="img/features-app.png" width="300" height="146"
-            alt="Два разноцветных телефона с запущенными приложениями">
-          <h3>Приложения</h3>
-          <p>
-            Покорите топ-10 приложений в AppStore и Google Play
-          </p>
-          <a href="#">Заказать</a>
-        </li>
-        <li class="features-item pres-item">
-          <img src="img/features-pres.png" width="300" height="146" alt="Стэнд с презентацией">
-          <h3>Презентации</h3>
-          <p>
-            Вы даже не подозреваете, насколько вы изумительны!
-          </p>
-          <a href="#">Заказать</a>
-        </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item features-web-item">
+            <img class="features-img" src="img/features-web.png" width="300" height="146"
+              alt="Ноутбук с открытым веб-сайтом">
+            <h3>Веб-Сайты</h3>
+            <p>
+              Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="features-item features-app-item">
+            <img class="features-img" src="img/features-app.png" width="300" height="146"
+              alt="Два разноцветных телефона с запущенными приложениями">
+            <h3>Приложения</h3>
+            <p>
+              Покорите топ-10 приложений в AppStore и Google Play
+            </p>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="features-item features-pres-item">
+            <img class="features-img" src="img/features-pres.png" width="300" height="146" alt="Стэнд с презентацией">
+            <h3>Презентации</h3>
+            <p>
+              Вы даже не подозреваете, насколько вы изумительны!
+            </p>
+            <a href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+    </div>
     <!-- Ниже блок - который по моему мнению можно охарактеризовать, как "о нас" -->
-    <div class="index-colums">
+    <div class="index-colums container">
       <!-- здесь думаю сделать 2 блока, возможно дива, чтобы потом на сетке их расположить рядом как колонки -->
       <section class="about-company">
         <h2 class="visually-hidden">Основные тезисы компании</h2>
@@ -129,40 +134,43 @@
         </table>
       </section>
     </div>
-
-    <section class="partners">
-      <h2 class="visually-hidden">Наши партнёры</h2>
-          <ul class="partners-list">
-            <li class="partner-logo">
-              <img src="img/partners-academy.png" width="199" height="68" alt="логотип компании html-academy">
-            </li>
-            <li class="partner-logo">
-              <img class="borodinski" src="img/partners-borodinski.png" width="209" height="90"
-                alt="логотип компании barbershop-borodinski">
-            </li>
-            <li class="partner-logo">
-              <img class="pink" src="img/partners-pink.png" width="185" height="52" alt="логотип компании pink">
-            </li>
-            <li class="partner-logo">
-              <img class="mishka" src="img/partners-mishka.png" width="173" height="84" alt="логотип компании mishka">
-            </li>
-          </ul>
-    </section>
+    <div class="container">
+      <section class="partners">
+        <h2 class="visually-hidden">Наши партнёры</h2>
+        <ul class="partners-list">
+          <li class="partner-logo">
+            <img src="img/partners-academy.png" width="199" height="68" alt="логотип компании html-academy">
+          </li>
+          <li class="partner-logo">
+            <img class="borodinski" src="img/partners-borodinski.png" width="209" height="90"
+              alt="логотип компании barbershop-borodinski">
+          </li>
+          <li class="partner-logo">
+            <img class="pink" src="img/partners-pink.png" width="185" height="52" alt="логотип компании pink">
+          </li>
+          <li class="partner-logo">
+            <img class="mishka" src="img/partners-mishka.png" width="173" height="84" alt="логотип компании mishka">
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
-  <div class="map">
+
+  <footer class="main-footer">
     <img class="interactive-map" src="img/map.png" width="1440" height="416"
       alt="карта с указанием местоположения компании">
-    <div class="map-contacts">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>
-        191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8
-      </p>
-      <a class="tel-number" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
-      <a class="button map-modal" href="#">Напишите нам</a>
+    <div class="container">
+      <div class="map-contacts">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <a class="tel-number" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
+        <a class="button map-modal" href="#">Напишите нам</a>
+      </div>
     </div>
-  </div>
-  <footer class="main-footer">
+
     <div class="container">
       <ul class="social-networks">
         <li class="social-btn social-vk">
