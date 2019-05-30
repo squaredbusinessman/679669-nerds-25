@@ -278,7 +278,7 @@ a {
 
 .features-item a {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
 }
@@ -582,6 +582,8 @@ a {
 }
 
 .fieldset {
+  display: block;
+  width: 260px;
   border: none;
 }
 
@@ -685,7 +687,10 @@ a {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
 }
+.catalog-sorting {
+  display: inline-block;
 
+}
 .catalog-sorting p {
   font-size: 18px;
   line-height: 18px;
