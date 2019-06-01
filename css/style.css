@@ -464,7 +464,7 @@ a {
 .inner-map-contacts {
   display: inline-block;
   position: absolute;
-  top: 3050px;
+  top: 3150px;
   width: 220px;
   height: 210px;
   padding: 50px;
@@ -601,6 +601,10 @@ a {
   padding: 0;
 }
 
+.range-slider {
+  margin-bottom: 60px;
+}
+
 .range-slider legend {
   font-size: 18px;
   line-height: 30px;
@@ -614,6 +618,11 @@ a {
   margin-bottom: 55px;
 }
 
+.cost-range-slider {
+  width: 260px;
+  height: 80px;
+}
+
 .range-slider input {
   line-height: 22px;
   text-align: center;
@@ -625,6 +634,15 @@ a {
   line-height: 22px;
   text-transform: uppercase;
   color: #283136;
+}
+
+.range-slider p {
+  display: inline-block;
+}
+
+.range-slider p input {
+  width: 80px;
+  height: 40px;
 }
 
 .filter-grid legend {
@@ -707,7 +725,7 @@ a {
 }
 .catalog-sorting {
   display: flex;
-
+  margin-left: 140px;
   width: 670px;
 
 }
@@ -742,6 +760,10 @@ a {
   color: #000000;
 }
  /*дальше карточки товаров*/
+
+ .product-cards {
+   margin-left: 140px;
+ }
 
  .card-list {
    width: 760px;
@@ -829,7 +851,8 @@ a {
   opacity: 1;
 }
 
-/* THAT'S ALL FOLKS */
+/* catalog-footer */
+
 .catalog-footer {
   padding-bottom: 70px;
 }
