@@ -725,24 +725,28 @@ a {
 }
 .catalog-sorting {
   display: flex;
+  justify-content: flex-end;
   margin-left: 140px;
   width: 670px;
+
+  text-transform: uppercase;
 
 }
 .catalog-sorting p {
   display: inline-block;
   margin: 0;
+  margin-right: 240px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  text-transform: uppercase;
+
   text-align: left;
   color: #000000;
 }
 
 .catalog-sorting a {
   display: inline-block;
-  margin-left: auto;
+  margin-left: 25px;
 }
 
 .sorting {
@@ -759,6 +763,7 @@ a {
 .sorting:active:focus {
   color: #000000;
 }
+
  /*дальше карточки товаров*/
 
  .product-cards {
