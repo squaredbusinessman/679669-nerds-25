@@ -588,14 +588,22 @@ a {
   background-color: #eeeeee;
 }
 
-.flex-grid {
+.catalog-cards-grid {
   margin-top: 60px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
 
 }
 
-.fieldset {
+.catalog-filter {
+  display: inline-block;
+  width: 260px;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.catalog-filter fieldset {
   width: 260px;
   border: none;
   padding: 0;
