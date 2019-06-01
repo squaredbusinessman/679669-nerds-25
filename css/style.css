@@ -164,6 +164,7 @@ a {
 }
 
 .index-slides {
+  padding-top: 85px;
   height: inherit;
 	opacity: 0;
 	position: absolute;
@@ -181,6 +182,7 @@ a {
 
 .slide1 {
   background-image: url(/img/slide-1.png);
+
 }
 .slide2 {
    background-image: url(/img/slide-2.png);
@@ -447,12 +449,61 @@ a {
 }
 
 /* далее футер */
-.interactive-map {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+.map-contacts {
+  display: inline-block;
   position: absolute;
-  /* не догадался как сделать карту поцентру вне контейнера, поэтому вынес её из центровщика и задал левый маргин( */
+  top: 1750px;
+  width: 220px;
+  height: 210px;
+  padding: 50px;
+
+  background-color: #ffffff;
+}
+
+.inner-map-contacts {
+  display: inline-block;
+  position: absolute;
+  top: 3050px;
+  width: 220px;
+  height: 210px;
+  background-color: #ffffff;
+}
+
+.map-contacts h2, .inner-map-contacts h2 {
+  display: inline-block;
+  width: 195px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.map-contacts p, .inner-map-contacts p {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  width: 210px;
+
+  line-height: 18px;
+  color: #666666;
+}
+
+.tel-number {
+  display: inline-block;
+  margin-bottom: 40px;
+
+
+  line-height: 18px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.map-modal {
+  margin: 0;
 }
 
 .main-footer {
@@ -475,57 +526,6 @@ a {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-}
-
-.map-contacts h2 {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.map-contacts p {
-  display: inline-block;
-  width: 200px;
-  line-height: 18px;
-  color: #666666;
-}
-
-.map-contacts {
-  display: none;
-  position: absolute;
-  top: 1310px;
-  width: 320px;
-  height: 310px;
-  padding: 50px;
-
-  background-color: #ffffff;
-}
-
-.inner-map-contacts {
-  display: none;
-  position: absolute;
-  top: 200px;
-  width: 320px;
-  height: 310px;
-
-
-  background-color: #ffffff;
-}
-
-.tel-number {
-  display: inline-block;
-  margin-bottom: 40px;
-
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-  text-decoration: none;
-}
-
-.map-modal {
-  margin-bottom: 45px;
 }
 
 
@@ -572,8 +572,11 @@ a {
 
 .catalog-title {
   width: 100%;
-  height: 240px;
+  height: 160px;
   margin: 0 auto;
+  padding-top: 80px;
+
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
