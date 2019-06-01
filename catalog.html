@@ -29,7 +29,7 @@
 
   <main>
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-    <div class="container">
+    <div class="container flex-grid">
       <section class="catalog-filter">
         <!-- далее будет блок с фильтрами для готовых шаблонов, ренджслайдер пока такой, потом будет нормальный) -->
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -86,16 +86,12 @@
           <button type="submit">Показать</button>
         </form>
       </section>
-    </div>
-    <div class="container">
       <section class="catalog-sorting">
         <p>Сортировать:</p>
         <a class="sorting cost-sort">По цене</a>
         <a class="sorting type-sort">По типу</a>
         <a class="sorting name-sort">По названию</a>
       </section>
-    </div>
-    <div class="container">
       <section class="product-card">
         <h2 class="visually-hidden">Карточки товаров</h2>
         <ul class="card-list">
@@ -177,10 +173,10 @@
   </main>
 
   <footer class="catalog-footer">
-      <img class="interactive-map" src="img/map.png" width="1440" height="416"
+    <img class="interactive-map" src="img/map.png" width="1440" height="416"
       alt="карта с указанием местоположения компании">
     <div class="container">
-      <div class="map-contacts">
+      <div class="inner-map-contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p>
           191186, Санкт-Петербург,

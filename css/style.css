@@ -493,6 +493,7 @@ a {
 }
 
 .map-contacts {
+  display: none;
   position: absolute;
   top: 1310px;
   width: 320px;
@@ -503,6 +504,7 @@ a {
 }
 
 .inner-map-contacts {
+  display: none;
   position: absolute;
   top: 200px;
   width: 320px;
@@ -581,8 +583,14 @@ a {
   background-color: #eeeeee;
 }
 
+.flex-grid {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 .fieldset {
-  display: block;
   width: 260px;
   border: none;
 }
@@ -688,15 +696,22 @@ a {
   background-color: #d5d5d5;
 }
 .catalog-sorting {
-  display: inline-block;
+  display: flex;
+  justify-content: end;
+  width: 760px;
 
 }
 .catalog-sorting p {
+  display: inline-block;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   text-align: left;
   color: #000000;
+}
+
+.catalog-sorting a {
+  display: inline-block;
 }
 
 .sorting {
@@ -714,6 +729,10 @@ a {
   color: #000000;
 }
  /*дальше карточки товаров*/
+
+ .card-list {
+   width: 760px;
+ }
 
  .card-item {
    display: inline-block;
@@ -772,10 +791,11 @@ a {
   height: 576px;
   border: 1px solid rgba(0, 1, 1, 0.1);
   position: relative;
+
 }
 
 .browser-card:before {
-  content: '⬤ ⬤ ⬤';
+  content: '';
   font-size: 17px;
   position: absolute;
   height: 40px;
@@ -787,10 +807,13 @@ a {
   box-sizing: border-box;
   border-radius: 5px 5px 0 0;
   color: #ffffff;
+  opacity: 0.12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='8' cx='15' cy='50%25' fill='white'/%3E%3Ccircle r='8' cx='40' cy='50%25' fill='white'/%3E%3Ccircle r='8' cx='65' cy='50%25' fill='white'/%3E%3C/svg%3E");
 }
 
 .browser-card:hover:before {
-  background-color: darkgray;
+  background-color: #4d4d4d;
+  opacity: 1;
 }
 
 /* THAT'S ALL FOLKS */
