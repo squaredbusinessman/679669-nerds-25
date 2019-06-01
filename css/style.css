@@ -598,15 +598,20 @@ a {
 .fieldset {
   width: 260px;
   border: none;
+  padding: 0;
 }
 
 .range-slider legend {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
-  letter-spacing: 0.2px;
+
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.legend-cost {
+  margin-bottom: 55px;
 }
 
 .range-slider input {
@@ -702,21 +707,24 @@ a {
 }
 .catalog-sorting {
   display: flex;
-  justify-content: end;
-  width: 760px;
+
+  width: 670px;
 
 }
 .catalog-sorting p {
   display: inline-block;
+  margin: 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  text-transform: uppercase;
   text-align: left;
   color: #000000;
 }
 
 .catalog-sorting a {
   display: inline-block;
+  margin-left: auto;
 }
 
 .sorting {
