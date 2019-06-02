@@ -780,6 +780,7 @@ a {
 
  .card-list {
    width: 760px;
+   padding: 0;
  }
 
  .card-item {
