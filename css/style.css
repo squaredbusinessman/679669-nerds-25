@@ -181,14 +181,14 @@ a {
 }
 
 .slide1 {
-  background-image: url(/img/slide-1.png);
+  background-image: url(img/slide-1.png);
 
 }
 .slide2 {
-   background-image: url(/img/slide-2.png);
+   background-image: url(img/slide-2.png);
 }
 .slide3 {
-   background-image: url(/img/slide-3.png);
+   background-image: url();
 }
 
 #slide1:checked ~ .slider > .slide1,
@@ -588,10 +588,13 @@ a {
   background-color: #eeeeee;
 }
 
+.flex-grid {
+  display: flex;
+}
+
 .catalog-cards-grid {
   margin-top: 60px;
-  display: flex;
-  flex-direction: column;
+
 }
 
 .catalog-filter {
@@ -738,7 +741,6 @@ a {
 
 }
 .catalog-sorting p {
-  display: inline-block;
   margin: 0;
   margin-right: 240px;
   font-size: 18px;
