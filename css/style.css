@@ -24,7 +24,7 @@ a {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: -1px;
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
@@ -289,41 +289,41 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.features-web-item a {
+.web-button {
   background-color: #fb565a;
 }
 
-.features-web-item a:hover {
+.web-button:hover {
   background-color: #e74246;
 }
 
-.features-web-item a:active {
+.web-button:active:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
 
-.features-app-item a {
+.app-button {
   background-color: #00ca74;
 }
 
-.features-app-item a:hover {
+.app-button:hover {
   background-color: #00bc6c;
 }
 
-.features-app-item a:active {
+.app-button:active:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #00aa62;
 }
 
-.features-pres-item a {
+.pres-button {
   background-color: #efc84a;
 }
 
-.features-pres-item a:hover {
+.pres-button:hover {
   background-color: #eab534;
 }
 
-.features-pres-item a:active {
+.pres-button:active:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #e5a722;
 }
@@ -379,14 +379,14 @@ a {
 
 .company-results td {
   font-size: 45px;
-  line-height: 10px;
+  line-height: 45px;
   font-weight: 700;
   color: #000000;
 }
 
 .percentage {
-  font-size: 30px;
-  line-height: 10px;
+  font-size: 25px;
+  line-height: 9px;
 }
 /* не получилось сделать нижний борер у блока partners*/
 .partners-list {
@@ -590,14 +590,9 @@ a {
 
 .catalog-cards-grid {
   margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-
-
 }
 
 .catalog-filter {
-  display: inline-block;
   width: 260px;
   margin: 0;
   margin-top: 60px;
