@@ -388,7 +388,7 @@ a {
   font-size: 25px;
   line-height: 10px;
 }
-/* не получилось сделать нижний борер у блока partners*/
+
 .partners-list {
   display: flex;
   justify-content: space-between;
