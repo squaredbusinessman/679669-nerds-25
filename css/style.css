@@ -464,7 +464,7 @@ a {
 .inner-map-contacts {
   display: inline-block;
   position: absolute;
-  top: 3150px;
+  top: 2500px;
   width: 220px;
   height: 210px;
   padding: 50px;
@@ -775,6 +775,7 @@ a {
 
  .product-cards {
    margin-left: 140px;
+   margin-top: 60px;
  }
 
  .card-list {
