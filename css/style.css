@@ -590,6 +590,8 @@ a {
 
 .catalog-cards-grid {
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter {
