@@ -29,7 +29,38 @@
   <main>
     <!-- Дальше - Блок слайдера -->
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-    <div class="slider-wrapper">
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Слайдер дизайн-студии "Нёрдс"</h2>
+        <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!--
+
+      <div class="slider-wrapper">
       <div class="container">
         <div class="index-slider">
           <input type="radio" name="point" id="slide1" checked>
@@ -56,13 +87,13 @@
             </div>
           </div>
           <div class="controls">
-            <label for="slide1">Слайд-1</label>
-            <label for="slide2">Слайд-2</label>
-            <label for="slide3">Слайд-3</label>
+            <label for="slide1"><span class="visually-hidden">Слайд-1</span></label>
+            <label for="slide2"><span class="visually-hidden">Слайд-2</span></label>
+            <label for="slide3"><span class="visually-hidden">Слайд-3</span></label>
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- ниже - преимущества  -->
     <h2 class="visually-hidden">Преимущества</h2>
     <div class="container">
@@ -102,16 +133,24 @@
       <!-- здесь думаю сделать 2 блока, возможно дива, чтобы потом на сетке их расположить рядом как колонки -->
       <section class="about-company">
         <h2 class="visually-hidden">Основные тезисы компании</h2>
-        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <p class="capabilities-description">Выполняем заказы на разработку:</p>
-        <ul class="our-capabilities">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <ul class="presentation">
+          <li class="phrase">
+            <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          </li>
+          <li class="pres-description">
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          </li>
+          <li class="capabilities">
+            <p class="description">Выполняем заказы на разработку:</p>
+            <ul class="shedule">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </li>
         </ul>
+
+
         <!-- есть еще вопрос по этому списку, в макете там красные черточки перед элементами списка, их наверное лучше сделать потом фоном через CSS? -->
       </section>
       <section class="business-card">
@@ -157,7 +196,8 @@
   </main>
 
   <footer class="main-footer">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1INLZT1Io3fLtnxlVdGuxx3asFotbaYTY" width="100%" height="480"></iframe>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1INLZT1Io3fLtnxlVdGuxx3asFotbaYTY" width="100%"
+      height="480"></iframe>
     <div class="container">
       <div class="map-contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
@@ -173,13 +213,13 @@
     <div class="container">
       <ul class="social-networks">
         <li class="social-btn social-vk">
-          <a href="#">Мы в Вконтакте</a>
+          <a href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
         </li>
         <li class="social-btn social-fb">
-          <a href="#">Мы в Фейсбуке</a>
+          <a href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
         <li class="social-btn social-insta">
-          <a href="#">Мы в Инстаграм</a>
+          <a href="#"><span class="visually-hidden">Мы в Инстаграм</span></a>
         </li>
       </ul>
       <p class="discount-phrase"><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>

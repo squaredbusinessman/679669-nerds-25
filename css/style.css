@@ -20,13 +20,23 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -34,18 +44,19 @@ a {
 /*кнопки*/
 .button {
   display: inline-block;
-  min-width: 200px;
-  height: 30px;
+  padding: 18px 50px;
 
   font: inherit;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
+  line-height: 18px;
+  vertical-align: middle;
   font-weight: 500;
   color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
 
   background-color: #fb565a;
   border-radius: 3px;
+  border: none;
 }
 
 .button:hover {
@@ -55,7 +66,7 @@ a {
 .button:active:focus {
   color: rgba(255, 255, 255, 0.3);
 
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px rgba(0, 1, 1, 0.1) inset;
   background-color: #d7373b;
   border-radius: 5px;
 }
@@ -84,13 +95,18 @@ a {
 
 .main-nav .container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .header-logo {
+  display: block;
+
   width: 160px;
   height: 65px;
+
   margin-top: 50px;
+  margin-right: 200px;
 }
 
 .site-nav {
@@ -101,6 +117,7 @@ a {
   width: 440px;
   margin: 0;
   padding: 0;
+  margin-right: 245px;
   margin-top: 85px;
 
   list-style: none;
@@ -111,13 +128,30 @@ a {
 }
 
 .shop-basket {
+  position: relative;
+
   margin: 0;
-  padding: 0;
+  padding-left: 35px;
   margin-top: 85px;
+
   font-weight: 500;
   color:#000000;
 }
 
+.shop-basket::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/svg/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .site-nav a:hover,
 .shop-basket:hover {
   color: #fb565a;
@@ -134,13 +168,132 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 
-/*Стили слайдера должны быть тут*/
+/*Стили слайдера*/
 
-.slider-wrapper {
+.slider {
+  position: relative;
+
+  background-color: #eeeeee;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+
+}
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+.slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide-1.png");
+  background-repeat: no-repeat;
+  background-position: 95% 22px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide-2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slide-3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+
+
+/*.slider-wrapper {
   width: 100%;
   background-color: #eeeeee;
 }
 .index-slider {
+  position: relative;
+
   height: 430px;
   margin: 0 auto;
   position: relative;
@@ -148,6 +301,8 @@ a {
 
   background-color: #eeeeee;
 }
+
+
 
 .index-slides b {
   font-size: 55px;
@@ -181,14 +336,17 @@ a {
 }
 
 .slide1 {
-  background-image: url(img/slide-1.png);
+  background-image: url("../img/slide-1.png");
+  background-repeat: no-repeat;
 
 }
 .slide2 {
-   background-image: url(img/slide-2.png);
+   background-image: url("../img/slide-2.png");
+   background-repeat: no-repeat;
 }
 .slide3 {
-   background-image: url();
+   background-image: url("../img/slide-3.png");
+   background-repeat: no-repeat;
 }
 
 #slide1:checked ~ .slider > .slide1,
@@ -250,11 +408,15 @@ a {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
-}
+}*/
 
 /*Стили преимуществ ниже*/
 .features {
-  margin: 80px 0;
+  margin: 0;
+  margin-top: 80px;
+  padding-bottom: 80px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .features-list {
@@ -280,7 +442,7 @@ a {
 
 .features-item a {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 18px;
   text-align: center;
   color: #ffffff;
 }
@@ -345,6 +507,11 @@ a {
   width: 660px;
 }
 
+.about-company p {
+  margin: 0;
+  padding: 0;
+}
+
 .about-company b {
   font-size: 45px;
   line-height: 45px;
@@ -352,17 +519,56 @@ a {
   color: #000000;
 }
 
-.capabilities-description {
+.presentation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.presentation .phrase {
+  margin-bottom: 35px;
+}
+
+.presentation .pres-description {
+  margin-bottom: 47px;
+}
+
+.capabilities .description {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
-.our-capabilities {
+.shedule {
   list-style: none;
 }
 
+.shedule li {
+  position: relative;
+}
+
+.shedule li:nth-child(1),
+.shedule li:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.shedule li::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 25px;
+  height: 2px;
+
+  color: #fb565a;
+}
 .business-card {
   width: 360px;
 }
@@ -609,6 +815,107 @@ a {
   padding: 0;
 }
 
+.filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.range-filter {
+  width:260px;
+  margin-top: 50px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+/*
 .range-slider {
   margin-bottom: 60px;
 }
@@ -652,7 +959,7 @@ a {
   width: 80px;
   height: 40px;
 }
-
+*/
 .filter-grid legend {
   font-size: 18px;
   line-height: 30px;
@@ -798,8 +1105,9 @@ a {
 
  .card-hover {
    width: 100%;
+   min-height: 230px;
    box-sizing: border-box;
-   padding: auto;
+
    position: absolute;
    top: 345px;
    font-size: 16px;
