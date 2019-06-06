@@ -551,14 +551,14 @@ img {
 
 .shedule-list li {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .shedule-list li:last-child {
   margin: 0;
 }
 
-.shedule-list li::before {
+.shedule-list li::before {/* не работает это дело*/
   content: "";
 
   position: absolute;
@@ -571,32 +571,49 @@ img {
 
   color: #fb565a;
 }
-/*
-.shedule li::before {
-  content: "";
-
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  width: 25px;
-  height: 2px;
-
-  color: #fb565a;
-}*/
+ /* лого и таблица*/
 .business-card {
   width: 360px;
 }
 
-.business-card p {
+.business-card-list {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+.business-card-item p {
+  margin-bottom: 49px;
+
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
   color: #000000;
 }
 
-.company-skills th {
-  font-size: 16px;
-  line-height: 18px;
+.business-card-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-skills {
+  order: 2;
+}
+
+.company-results {
+  order: 1;
+  margin-bottom: 27px;
+}
+
+.company-results td {
+  padding-left: 25px
+}
+
+.company-results td:first-child {
+  padding-left: 0;
 }
 
 .company-results td {
@@ -606,11 +623,27 @@ img {
   color: #000000;
 }
 
+.company-skills th {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.company-skills th {
+  padding-left: 25px;
+}
+
+.company-skills th:first-child {
+  padding-left: 0;
+}
+
+
 .percentage {
   font-size: 25px;
   line-height: 10px;
 }
 
+/* следующий блок с партнерами/клиентами*/
 .partners-list {
   display: flex;
   justify-content: space-between;
