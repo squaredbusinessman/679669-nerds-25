@@ -710,7 +710,8 @@ input[type="radio"].visually-hidden {
   background-color: #e74246;
 }
 
-.social-btn svg:active:focus {/*не работает.?*/
+.social-btn:active path,
+.social-button:focus path {/*не работает.?*/
   opacity: 0.3;
 }
 
@@ -973,14 +974,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-end;
   margin-left: 140px;
-  width: 670px;
+  width: 760px;
 
   text-transform: uppercase;
 
 }
 .catalog-sorting p {
   margin: 0;
-  margin-right: 240px;
+  padding: 0;
+
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -991,7 +993,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-sorting a {
   display: inline-block;
-  margin-left: 25px;
+
 }
 
 .sorting {
@@ -1005,18 +1007,42 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting:active:focus {
+.sorting:active,
+.sorting:focus {
   color: #000000;
 }
 
+.sorting-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-item path {
+  opacity: 0.2;
+}
+
+.sorting-item:hover path {
+  opacity: 1;
+  fill: #a6a6a6;
+}
+
+.sorting-item:active path,
+.active-sorting path {
+  opacity: 1;
+  fill: #000000;
+}
  /*дальше карточки товаров*/
 
  .product-cards {
-   margin: 60px 0px 60px 140px;
+   margin: 50px 0px 60px 140px;
  }
 
  .card-list {
-   width: 760px;
+   width: 770px;
+   margin: 0;
    padding: 0;
  }
 
@@ -1027,6 +1053,12 @@ input[type="radio"].visually-hidden {
    position: relative;
    font-size: 0px;
 
+   margin-right: 40px;
+   margin-bottom: 33px;
+ }
+
+ .card-item:nth-child(2n) {
+   margin-right: 0;
  }
 
  .card-item:hover .card-hover {
@@ -1072,6 +1104,36 @@ input[type="radio"].visually-hidden {
    min-width: 136px;
  }
 
+ .card-hover-flex {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-shrink: 1;
+
+ }
+
+ .card-hover-flex h3 {
+   width: 115px;
+   margin: 0;
+   margin-top: 35px;
+   margin-bottom: 25px;
+ }
+
+ .card-hover-flex p {
+   margin: 0;
+   padding: 0;
+ }
+
+ .card-hover-flex .card-description {
+   width: 228px;
+   margin-bottom: 30px;
+ }
+
+ .card-hover-flex .buy-button {
+   width: 200px;
+   padding-top: 19px;
+   padding-bottom: 18px;
+ }
 /* "браузер" вокруг карточек товаров */
 
 .browser-card {
