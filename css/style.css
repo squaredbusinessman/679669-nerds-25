@@ -909,20 +909,8 @@ input[type="radio"].visually-hidden {
 .filter-grid-item {
   margin-bottom: 25px;
   padding-left: 35px;
-
 }
 
-.filter-grid-item input {
-  opacity: 0.4;
-}
-
-.filter-grid-item input:hover {
-  opacity: 1;
-}
-
-.filter-grid-item input:disabled {
-  opacity: 0.1;
-}
 
 .filter-grid-item label {
   position: relative;
@@ -968,6 +956,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   opacity: 0.4;
 }
+
+.filter-grid-radio:hover + label {
+  opacity: 1;
+}
+
+.filter-grid-radio:disabled + label {
+  opacity: 0.1;
+}
+
 /* фильтр-ОСОБЕННОСТИ*/
 
 .filter-content {
@@ -1037,6 +1034,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.filter-content-checkbox:checked + label::before {
+  display: none;
+}
+
 .filter-content-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -1049,6 +1050,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/svg/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #ffffff;
   opacity: 0.4;
 }
 
