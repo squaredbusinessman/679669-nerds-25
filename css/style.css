@@ -169,6 +169,11 @@ input[type="radio"].visually-hidden {
   outline: none;
   border-bottom: 2px solid #fb565a;
 }
+
+.active-nav-position {
+  border-bottom: 2px solid #fb565a;
+}
+
 /*--------------------------------------------- МЭЙН -----------------------------------------------*/
 /*Стили слайдера*/
 
@@ -939,6 +944,10 @@ input[type="radio"].visually-hidden {
 
 .filter-grid-item label:disabled {
   color:rgba(40, 49, 54, 0.3);
+}
+
+.filter-grid-radio:checked + label::before {
+  display: none;
 }
 
 .filter-grid-radio:checked + label::after {
