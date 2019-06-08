@@ -440,14 +440,13 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-
-  top: 50%;
-  left: 50%;
+  top: 11px;
+  left: -35px;
 
   width: 25px;
   height: 2px;
 
-  color: #fb565a;
+  background-color: #fb565a;
 }
  /* лого и таблица*/
 .business-card {
