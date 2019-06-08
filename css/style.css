@@ -521,22 +521,29 @@ input[type="radio"].visually-hidden {
 }
 
 /* следующий блок с партнерами/клиентами*/
+
+.partners {
+  margin-bottom: 80px;
+}
+
 .partners-list {
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  height: 180px;
   align-items: center;
+  min-height: 160px;
+
   list-style: none;
+
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-
 }
 
 .partner-logo {
   min-width: 279px;
   background-color: #ffffff;
   position: relative;
+  margin-left: 30px;
 }
 
 .partner-logo:after {
@@ -566,19 +573,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.partner-logo .borodinski {
-  padding-left: 45px;
-
-}
-
-.partner-logo .pink {
-  padding-left: 55px;
-
-}
-
-.partner-logo .mishka {
-  padding-left: 60px;
-}
 
 /* --------------------------------------- футер --------------------------------------------*/
 
