@@ -583,6 +583,10 @@ input[type="radio"].visually-hidden {
 
 /* --------------------------------------- футер --------------------------------------------*/
 
+.main-footer, .catalog-footer {
+  margin-bottom: 77px;
+}
+
 .main-footer p {
   font-size: 16px;
   line-height: 22px;
@@ -660,7 +664,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-/* -----------------------------------------соц сети------------------------------------------*/
+/* соц сети*/
 .social-networks {
   display: flex;
   flex-wrap: wrap;
@@ -879,7 +883,9 @@ input[type="radio"].visually-hidden {
 .max-price {
   text-align: right;
 }
+
 /* фильтр- СЕТКА*/
+
 .filter-grid legend {
   font-size: 18px;
   line-height: 30px;
@@ -908,7 +914,9 @@ input[type="radio"].visually-hidden {
 .filter-grid label:disabled {
   color:rgba(40, 49, 54, 0.3);
 }
+
 /* фильтр-ОСОБЕННОСТИ*/
+
 .filter-content legend {
   font-size: 18px;
   line-height: 30px;
@@ -958,7 +966,9 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
 }
+
 /* СОРТИРОВАТЬ */
+
 .catalog-sorting {
   display: flex;
   justify-content: flex-end;
@@ -1002,8 +1012,7 @@ input[type="radio"].visually-hidden {
  /*дальше карточки товаров*/
 
  .product-cards {
-   margin-left: 140px;
-   margin-top: 60px;
+   margin: 60px 0px 60px 140px;
  }
 
  .card-list {
@@ -1029,14 +1038,17 @@ input[type="radio"].visually-hidden {
    min-height: 230px;
    box-sizing: border-box;
 
+   display: none;
+
    position: absolute;
    top: 345px;
    font-size: 16px;
    line-height: 18px;
    text-align: center;
    color: #666666;
+
    background-color: #eeeeee;
-   display: none;
+
  }
 
  .card-hover h3 {
@@ -1055,12 +1067,12 @@ input[type="radio"].visually-hidden {
  .card-hover h3:active {
    color: rgba(0, 0, 0, 0.3);
  }
- .card-hover  .card-description {
-   width: 100%;
 
+ .card-hover  .card-description {
+   min-width: 136px;
  }
 
-/*"браузер" вокруг карточек товаров */
+/* "браузер" вокруг карточек товаров */
 
 .browser-card {
   margin: auto;
@@ -1094,11 +1106,70 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-/* catalog-footer */
+/* Хлебные крошки */
 
-.catalog-footer {
-  padding-bottom: 70px;
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0px 0px 60px 140px;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 11px;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #eeeeee;
+
+  border-radius: 3px;
+
+}
+
+.breadcrumbs-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.breadcrumbs-item:last-child {
+  width: 260px;
+}
+
+.breadcrumbs-item:hover {
+  background-color: #dfdfdf;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+.active-breadcrumbs {
+  margin: 0;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+/* catalog-footer */
 
 .catalog-footer .container {
   display: flex;
