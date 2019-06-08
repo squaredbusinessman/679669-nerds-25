@@ -534,7 +534,6 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 
-
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -704,7 +703,7 @@ input[type="radio"].visually-hidden {
 }
 
 .social-btn:active path,
-.social-button:focus path {/*не работает.?*/
+.social-button:focus path {
   opacity: 0.3;
 }
 
@@ -966,6 +965,7 @@ input[type="radio"].visually-hidden {
 .catalog-sorting {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-left: 140px;
   width: 760px;
 
@@ -975,6 +975,7 @@ input[type="radio"].visually-hidden {
 .catalog-sorting p {
   margin: 0;
   padding: 0;
+  margin-right: 267px;
 
   font-size: 18px;
   line-height: 18px;
@@ -986,7 +987,15 @@ input[type="radio"].visually-hidden {
 
 .catalog-sorting a {
   display: inline-block;
+  margin-right: 25px;
+}
 
+.catalog-sorting a:nth-child(3) {
+  margin-right: 48px;
+}
+
+.catalog-sorting a:last-child {
+  margin: 0;
 }
 
 .sorting {
@@ -998,6 +1007,10 @@ input[type="radio"].visually-hidden {
 
 .sorting:hover {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sorting .active-sort {
+  color: #000000;
 }
 
 .sorting:active,
@@ -1020,6 +1033,10 @@ input[type="radio"].visually-hidden {
 .sorting-item:hover path {
   opacity: 1;
   fill: #a6a6a6;
+}
+
+.active-sorting {
+  margin-right: 18px;
 }
 
 .sorting-item:active path,
