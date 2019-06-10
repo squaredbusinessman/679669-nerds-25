@@ -533,33 +533,44 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-list {
+  list-style: none;
+
   margin: 0;
   padding: 0;
+
+  min-height: 176px;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  min-height: 160px;
-  list-style: none;
+
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
 .partner-logo {
-  min-width: 279px;
-  background-color: #ffffff;
   position: relative;
-  margin-left: 30px;
+
+  display: block;
+
+  width: 300px;
+  min-height: 180px;
+  text-align: center;
  }
 
-.partner-list li:after {
+.partner-logo:after {
   content: "";
   display: inline-block;
-  vertical-align: top;
   width: 2px;
   height: 52px;
   background-color: #d7dcde;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 64px;
+}
+
+.item:last-child:after{
+  display: none;
 }
 
 .partner-logo img {
