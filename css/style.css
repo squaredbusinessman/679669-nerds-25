@@ -923,11 +923,6 @@ input[type="radio"].visually-hidden {
   user-select: none;
 }
 
-
-.filter-input:hover + label {
-  color: #283136;
-}
-
 .filter-input:disabled + label {
   opacity: 0.3;
 }
@@ -947,6 +942,8 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   opacity: 0.4;
 }
+
+
 
 .filter-grid-item label:disabled {
   color:rgba(40, 49, 54, 0.3);
@@ -972,7 +969,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.filter-grid-radio:hover + label {
+.filter-grid-radio + label:hover::before,
+.filter-grid-radio:checked + label:hover::after {
   opacity: 1;
 }
 
@@ -981,13 +979,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-.filter-input:hover + label {
-  color: #283136;
-}
-
-.filter-input:disabled + label {
-  opacity: 0.3;
-}
 
 
 /* фильтр-ОСОБЕННОСТИ*/
@@ -1025,14 +1016,6 @@ input[type="radio"].visually-hidden {
 
 .filter-content-item input {
   opacity: 0.4;
-}
-
-.filter-content-item input:hover {
-  opacity: 1;
-}
-
-.filter-content-item input:disabled {
-  opacity: 0.1;
 }
 
 .filter-content-item label {
@@ -1081,6 +1064,11 @@ input[type="radio"].visually-hidden {
 
 .filter-content-item label:disabled {
   color:rgba(40, 49, 54, 0.3);
+}
+
+.filter-content-checkbox + label:hover::before,
+.filter-content-checkbox:checked + label:hover::after {
+  opacity: 1;
 }
 
 .catalog-form-button {
