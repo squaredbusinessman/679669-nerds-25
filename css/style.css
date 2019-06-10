@@ -126,6 +126,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav a {
+  display: block;
   color: #000000;
 }
 
@@ -532,13 +533,12 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-list {
+  margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   min-height: 160px;
-
   list-style: none;
-
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -548,21 +548,18 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   position: relative;
   margin-left: 30px;
-}
+ }
 
-.partner-logo:after {
+.partner-list li:after {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 2px;
   height: 52px;
   background-color: #d7dcde;
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.partner-logo:last-child:after {
-  display: none;
 }
 
 .partner-logo img {
