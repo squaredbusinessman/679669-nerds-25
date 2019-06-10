@@ -612,12 +612,24 @@ input[type="radio"].visually-hidden {
   width: 320px;
 }
 
+.map::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: 50%;
+
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .map-contacts {
   display: flex;
   flex-direction: column;
 
   position: absolute;
-  top: -450px;
+  top: -365px;
   left: -420px;
   width: 220px;
   height: 210px;
