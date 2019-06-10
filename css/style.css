@@ -550,8 +550,10 @@ input[type="radio"].visually-hidden {
 
 .partner-logo {
   position: relative;
-
-  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
   min-height: 180px;
   text-align: center;
   vertical-align: middle;
@@ -612,12 +614,12 @@ input[type="radio"].visually-hidden {
   width: 320px;
 }
 
-.map::before {
+.map-container::after {
   content: "";
 
   position: absolute;
-  top: 50%;
-  right: 50%;
+  bottom: 0;
+  left: 0;
 
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
