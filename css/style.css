@@ -551,11 +551,10 @@ input[type="radio"].visually-hidden {
 .partner-logo {
   position: relative;
 
-  display: block;
-
   width: 300px;
   min-height: 180px;
   text-align: center;
+  vertical-align: middle;
  }
 
 .partner-logo:after {
@@ -569,7 +568,7 @@ input[type="radio"].visually-hidden {
   top: 64px;
 }
 
-.item:last-child:after{
+.partner-logo:last-child:after{
   display: none;
 }
 
