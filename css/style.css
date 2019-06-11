@@ -5,22 +5,25 @@ html {
 body {
   margin: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: #283136;
+  font-family: "Roboto", Arial, sans-serif;
   text-align: left;
+  color: #283136;
 
   background-color: #ffffff;
 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
 }
 
-img {/*запрет вываливаться изображениям за границы блока, не нарушая свои пропорции*/
+/*запрет вываливаться изображениям за границы блока, не нарушая свои пропорции*/
+img {
   max-width: 100%;
   height: auto;
 }
@@ -33,14 +36,15 @@ input[type="radio"].visually-hidden {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  border: 0;
+
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(100%);
 }
 
 /*кнопки*/
@@ -49,16 +53,16 @@ input[type="radio"].visually-hidden {
   padding: 18px 50px;
 
   font: inherit;
+  font-weight: 500;
   line-height: 18px;
   vertical-align: middle;
-  font-weight: 500;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
 
   background-color: #fb565a;
-  border-radius: 3px;
   border: none;
+  border-radius: 3px;
 }
 
 .button:hover {
@@ -68,18 +72,18 @@ input[type="radio"].visually-hidden {
 .button:active:focus {
   color: rgba(255, 255, 255, 0.3);
 
-  box-shadow: inset 0px 3px rgba(0, 1, 1, 0.1) inset;
   background-color: #d7373b;
   border-radius: 5px;
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1) inset;
 }
 /*конец кнопок*/
 
- /*-------------------------------------------header------------------------------------------*/
+/*-------------------------------------------header------------------------------------------*/
 
 
 .main-nav {
-  width: 100%;
   display: flex;
+  width: 100%;
 
   font-weight: 500;
   line-height: 30px;
@@ -98,35 +102,32 @@ input[type="radio"].visually-hidden {
 .main-nav .container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .header-logo {
   display: block;
-
   width: 160px;
   height: 65px;
-
-  margin-top: 50px;
-  margin-right: 200px;
+  margin-top: 53px;
+  margin-right: 202px;
 }
 
 .site-nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
+  align-items: center;
   width: 440px;
   margin: 0;
+  margin-top: 71px;
+  margin-right: 248px;
   padding: 0;
-  margin-right: 245px;
-  margin-top: 85px;
 
   list-style: none;
 }
 
 .site-nav a {
   display: block;
+
   color: #000000;
 }
 
@@ -134,19 +135,18 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin: 0;
+  margin-top: 79px;
   padding-left: 35px;
-  margin-top: 85px;
 
   font-weight: 500;
-  color:#000000;
+  color: #000000;
 }
 
 .shop-basket::before {
   content: "";
-
   position: absolute;
   top: 7px;
-  left: 0;
+  left: -4px;
 
   width: 15px;
   height: 15px;
@@ -155,6 +155,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .site-nav a:hover,
 .shop-basket:hover {
   color: #fb565a;
@@ -167,8 +168,8 @@ input[type="radio"].visually-hidden {
 
 .site-nav a:focus,
 .shop-basket:focus {
-  outline: none;
   border-bottom: 2px solid #fb565a;
+  outline: none;
 }
 
 .active-nav-position {
@@ -186,19 +187,19 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  left: 50%;
   bottom: 104px;
+  left: 50%;
   z-index: 100;
 
   width: 160px;
   height: 18px;
 
-  text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  text-align: center;
 
+  transform: translateX(-50%);
 }
-.slider-controls i {
+.slider-controls label {
   position: relative;
 
   display: inline-block;
@@ -210,9 +211,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.slider-controls i::after {
+.slider-controls label::after {
   content: "";
-
   position: absolute;
   top: 8px;
   left: 8px;
@@ -222,16 +222,14 @@ input[type="radio"].visually-hidden {
   height: 18px;
 
   background: #ffffff;
-
   border-radius: 50%;
 }
 
 .slider-controls .active::before {
   content: "";
-
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   z-index: 2;
 
   width: 4px;
@@ -248,15 +246,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
-}
-
-.slider-item {
-  display: none;
-  padding: 78px 0 80px 0;
-}
-
-.slider-item:nth-child(1) {
-  display: block;
 }
 
 .slider-item:nth-child(1) {
@@ -277,20 +266,59 @@ input[type="radio"].visually-hidden {
   background-position: 100% 20px;
 }
 
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
 
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
 }
 
 .slider-item p {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
 }
 
 
@@ -306,9 +334,9 @@ input[type="radio"].visually-hidden {
 .features-list {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -317,11 +345,11 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item h3 {
-  font-size: 24px;
   font-weight: bold;
+  font-size: 24px;
   line-height: 30px;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .features-item a {
@@ -344,8 +372,8 @@ input[type="radio"].visually-hidden {
 }
 
 .web-button:active:focus {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .app-button {
@@ -357,8 +385,8 @@ input[type="radio"].visually-hidden {
 }
 
 .app-button:active:focus {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #00aa62;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pres-button {
@@ -370,14 +398,14 @@ input[type="radio"].visually-hidden {
 }
 
 .pres-button:active:focus {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #e5a722;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
- .features-img {
-   display: block;
-   width: 300px;
-   height: 146px;
- }
+.features-img {
+  display: block;
+  width: 300px;
+  height: 146px;
+}
 /* about company */
 
 .index-colums {
@@ -387,8 +415,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-company {
-  padding-top: 40px;
   width: 660px;
+  padding-top: 40px;
 }
 
 .presentation-item > p {
@@ -397,16 +425,17 @@ input[type="radio"].visually-hidden {
 }
 
 .about-company b {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
   color: #000000;
 }
 
 .presentation-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .presentation-list .phrase {
@@ -418,23 +447,25 @@ input[type="radio"].visually-hidden {
 }
 
 .presentation-item .description {
+  margin-bottom: 30px;
+
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-
-  margin-bottom: 30px;
 }
 
 .shedule-list {
-  list-style: none;
   margin: 0;
   padding-left: 35px;
+
+  list-style: none;
 }
 
 .shedule-list li {
   position: relative;
+
   margin-bottom: 20px;
 }
 
@@ -442,9 +473,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.shedule-list li::before {/* не работает это дело*/
+.shedule-list li::before {
+  /* не работает это дело*/
   content: "";
-
   position: absolute;
   top: 11px;
   left: -35px;
@@ -454,27 +485,27 @@ input[type="radio"].visually-hidden {
 
   background-color: #fb565a;
 }
- /* лого и таблица*/
+/* лого и таблица*/
 .business-card {
   width: 360px;
 }
 
 .business-card-list {
-  list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .business-card-item p {
   margin-bottom: 49px;
 
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
-
   color: #000000;
+  text-transform: uppercase;
 }
 
 .business-card-table {
@@ -492,7 +523,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company-results td {
-  padding-left: 25px
+  padding-left: 25px;
 }
 
 .company-results td:first-child {
@@ -500,16 +531,16 @@ input[type="radio"].visually-hidden {
 }
 
 .company-results td {
+  font-weight: 700;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
   color: #000000;
 }
 
 .company-skills th {
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 .company-skills th {
@@ -522,6 +553,9 @@ input[type="radio"].visually-hidden {
 
 
 .percentage {
+  position: relative;
+  top: -15px;
+
   font-size: 25px;
   line-height: 10px;
 }
@@ -533,16 +567,14 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
-
-  min-height: 176px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 176px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -550,27 +582,28 @@ input[type="radio"].visually-hidden {
 
 .partner-logo {
   position: relative;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 25%;
-  min-height: 180px;
-  text-align: center;
-  vertical-align: middle;
- }
+}
 
 .partner-logo:after {
   content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+
   display: inline-block;
   width: 2px;
   height: 52px;
+  margin-top: -26px;
+
   background-color: #d7dcde;
-  position: absolute;
-  right: 0;
-  top: 64px;
 }
 
-.partner-logo:last-child:after{
+.partner-logo:last-child:after {
   display: none;
 }
 
@@ -589,7 +622,8 @@ input[type="radio"].visually-hidden {
 
 /* --------------------------------------- футер --------------------------------------------*/
 
-.main-footer, .catalog-footer {
+.main-footer,
+.catalog-footer {
   margin-bottom: 77px;
 }
 
@@ -600,23 +634,21 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer b {
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
   color: #000000;
 }
 
 .map-container {
   position: relative;
 
-  margin-bottom: 69px;
-
   width: 320px;
+  margin-bottom: 69px;
 }
 
 .map-container::after {
   content: "";
-
   position: absolute;
   bottom: 0;
   left: 0;
@@ -627,12 +659,12 @@ input[type="radio"].visually-hidden {
 }
 
 .map-contacts {
-  display: flex;
-  flex-direction: column;
-
   position: absolute;
   top: -365px;
   left: -420px;
+
+  display: flex;
+  flex-direction: column;
   width: 220px;
   height: 210px;
   padding: 50px;
@@ -641,23 +673,22 @@ input[type="radio"].visually-hidden {
 }
 
 .map-contacts-list {
-  list-style: none;
+  width: 219px;
   margin: 0;
   padding: 0;
 
-  width: 219px;
+  list-style: none;
 }
 
 .map-contacts h2 {
-
   width: 195px;
   margin: 0;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .map-contacts p {
@@ -688,8 +719,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-
   width: 261px;
   margin: 0 ;
   padding: 0;
@@ -705,7 +734,6 @@ input[type="radio"].visually-hidden {
 .social-btn {
   display: flex;
   align-items: center;
-
   width: 79px;
   height: 79px;
 
@@ -741,11 +769,9 @@ input[type="radio"].visually-hidden {
 .discount-phrase {
   width: 560px;
   min-height: 79px;
-
   margin: 0;
   margin-top: 9px;
   margin-left: 139px;
-
 }
 
 .discount-phrase b {
@@ -772,10 +798,9 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding-top: 80px;
 
-
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
   text-align: center;
   color: #000000;
 
@@ -788,20 +813,19 @@ input[type="radio"].visually-hidden {
 
 .catalog-cards-grid {
   margin-top: 60px;
-
 }
 /* фильтр - СТОИМОСТЬ*/
 .catalog-filter {
   width: 260px;
   margin: 0;
   margin-top: 60px;
-
 }
 
 .catalog-filter fieldset {
   width: 260px;
-  border: none;
   padding: 0;
+
+  border: none;
 }
 
 .filter-item {
@@ -813,15 +837,15 @@ input[type="radio"].visually-hidden {
 }
 
 .range-filter {
-  width:260px;
+  width: 260px;
   margin-top: 50px;
 }
 
 .filter-item legend {
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .range-controls {
@@ -834,7 +858,6 @@ input[type="radio"].visually-hidden {
   padding-left: 20px;
 
   background-color: #f1f1f1;
-
   border-radius: 5px;
 }
 
@@ -860,10 +883,10 @@ input[type="radio"].visually-hidden {
   height: 4px;
   padding: 0;
 
-  border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border: 8px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
@@ -889,17 +912,17 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
   margin-left: 10px;
+  padding: 8px 10px;
 
-  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #283136;
 
+  background: #f1f1f1;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
 }
 
 .max-price {
@@ -914,17 +937,18 @@ input[type="radio"].visually-hidden {
 .filter-grid legend {
   margin-bottom: 21px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .filter-grid-list {
-  list-style: none;
-  margin:0;
+  margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .filter-grid-list li {
@@ -944,6 +968,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   cursor: pointer;
+
   user-select: none;
 }
 
@@ -953,7 +978,6 @@ input[type="radio"].visually-hidden {
 
 .filter-grid-radio + label::before {
   content: "";
-
   position: absolute;
   top: -3px;
   left: -35px;
@@ -970,7 +994,7 @@ input[type="radio"].visually-hidden {
 
 
 .filter-grid-item label:disabled {
-  color:rgba(40, 49, 54, 0.3);
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filter-grid-radio:checked + label::before {
@@ -979,7 +1003,6 @@ input[type="radio"].visually-hidden {
 
 .filter-grid-radio:checked + label::after {
   content: "";
-
   position: absolute;
   top: -3px;
   left: -35px;
@@ -1014,17 +1037,18 @@ input[type="radio"].visually-hidden {
 .filter-content legend {
   margin-bottom: 21px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .filter-content-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .filter-content-list li {
@@ -1035,7 +1059,6 @@ input[type="radio"].visually-hidden {
 .filter-content-item {
   margin-bottom: 25px;
   padding-left: 35px;
-
 }
 
 .filter-content-item input {
@@ -1048,6 +1071,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   cursor: pointer;
+
   user-select: none;
 }
 
@@ -1079,15 +1103,15 @@ input[type="radio"].visually-hidden {
   width: 27px;
   height: 23px;
 
+  background-color: #ffffff;
   background-image: url("../img/svg/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: #ffffff;
   opacity: 0.4;
 }
 
 .filter-content-item label:disabled {
-  color:rgba(40, 49, 54, 0.3);
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filter-content-checkbox + label:hover::before,
@@ -1098,9 +1122,9 @@ input[type="radio"].visually-hidden {
 .catalog-form-button {
   width: 100%;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
   text-align: center;
   color: #000000;
 
@@ -1112,11 +1136,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-form-button:active:focus {
-  outline: none;
   color: rgba(0, 0, 0, 0.3);
 
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
+  outline: none;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /* СОРТИРОВАТЬ */
@@ -1125,21 +1149,19 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 140px;
   width: 760px;
+  margin-left: 140px;
 
   text-transform: uppercase;
-
 }
 .catalog-sorting p {
   margin: 0;
-  padding: 0;
   margin-right: 267px;
+  padding: 0;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 700;
-
   text-align: left;
   color: #000000;
 }
@@ -1180,9 +1202,10 @@ input[type="radio"].visually-hidden {
 .sorting-list {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .sorting-item path {
@@ -1191,6 +1214,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-item:hover path {
   opacity: 1;
+
   fill: #a6a6a6;
 }
 
@@ -1201,135 +1225,140 @@ input[type="radio"].visually-hidden {
 .sorting-item:active path,
 .active-sorting path {
   opacity: 1;
+
   fill: #000000;
 }
- /*дальше карточки товаров*/
+/*дальше карточки товаров*/
 
- .product-cards {
-   margin: 50px 0px 60px 140px;
- }
+.product-cards {
+  margin: 50px 0 60px 140px;
+}
 
- .card-list {
-   width: 770px;
-   margin: 0;
-   padding: 0;
- }
+.card-list {
+  width: 770px;
+  margin: 0;
+  padding: 0;
+}
 
- .card-item {
-   display: inline-block;
-   background-color: #ffffff;
-   width: 360px;
-   position: relative;
-   font-size: 0px;
+.card-item {
+  position: relative;
 
-   margin-right: 40px;
-   margin-bottom: 33px;
- }
+  display: inline-block;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 33px;
 
- .card-item:nth-child(2n) {
-   margin-right: 0;
- }
+  font-size: 0;
 
- .card-item:hover .card-hover {
-   display: block;
- }
+  background-color: #ffffff;
+}
 
- .card-hover {
-   width: 100%;
-   min-height: 230px;
-   box-sizing: border-box;
+.card-item:nth-child(2n) {
+  margin-right: 0;
+}
 
-   display: none;
+.card-item:hover .card-hover {
+  display: block;
+}
 
-   position: absolute;
-   top: 345px;
-   font-size: 16px;
-   line-height: 18px;
-   text-align: center;
-   color: #666666;
+.card-hover {
+  position: absolute;
+  top: 345px;
 
-   background-color: #eeeeee;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 230px;
 
- }
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
 
- .card-hover h3 {
-   font-size: 18px;
-   line-height: 30px;
-   font-weight: 700;
-   text-align: center;
-   text-transform: uppercase;
-   color: #000000;
- }
+  background-color: #eeeeee;
+}
 
- .card-hover h3:hover {
-   color: #fb565a;
- }
+.card-hover h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
 
- .card-hover h3:active {
-   color: rgba(0, 0, 0, 0.3);
- }
+.card-hover h3:hover {
+  color: #fb565a;
+}
 
- .card-hover  .card-description {
-   min-width: 136px;
- }
+.card-hover h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
- .card-hover-flex {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   flex-shrink: 1;
+.card-hover  .card-description {
+  min-width: 136px;
+}
 
- }
+.card-hover-flex {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: center;
+}
 
- .card-hover-flex h3 {
-   width: 115px;
-   margin: 0;
-   margin-top: 35px;
-   margin-bottom: 25px;
- }
+.card-hover-flex h3 {
+  width: 115px;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
 
- .card-hover-flex p {
-   margin: 0;
-   padding: 0;
- }
+.card-hover-flex p {
+  margin: 0;
+  padding: 0;
+}
 
- .card-hover-flex .card-description {
-   width: 228px;
-   margin-bottom: 30px;
- }
+.card-hover-flex .card-description {
+  width: 228px;
+  margin-bottom: 30px;
+}
 
- .card-hover-flex .buy-button {
-   width: 200px;
-   padding-top: 19px;
-   padding-bottom: 18px;
- }
+.card-hover-flex .buy-button {
+  width: 200px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+}
 /* "браузер" вокруг карточек товаров */
 
 .browser-card {
-  margin: auto;
-  margin-top: 40px;
-  width: 360px;
-  height: 576px;
-  border: 1px solid rgba(0, 1, 1, 0.1);
   position: relative;
 
+  width: 360px;
+  height: 576px;
+  margin: auto;
+  margin-top: 40px;
+
+  border: 1px solid rgba(0, 1, 1, 0.1);
 }
 
 .browser-card:before {
-  content: '';
-  font-size: 17px;
+  content: "";
   position: absolute;
-  height: 40px;
   top: -40px;
   left: 0;
-  background-color: gray;
-  width: 100%;
-  padding: 5px;
+
   box-sizing: border-box;
-  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+
+  font-size: 17px;
   color: #ffffff;
-  opacity: 0.12;
+
+  background-color: gray;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='8' cx='15' cy='50%25' fill='white'/%3E%3Ccircle r='8' cx='40' cy='50%25' fill='white'/%3E%3Ccircle r='8' cx='65' cy='50%25' fill='white'/%3E%3C/svg%3E");
+  border-radius: 5px 5px 0 0;
+  opacity: 0.12;
 }
 
 .browser-card:hover:before {
@@ -1340,39 +1369,34 @@ input[type="radio"].visually-hidden {
 /* Хлебные крошки */
 
 .breadcrumbs-list {
-  list-style: none;
-  margin: 0px 0px 60px 140px;
-  padding: 0;
-
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin: 0 0 60px 140px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs-item {
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  margin-left: 11px;
-
+  align-items: center;
   width: 50px;
   height: 50px;
+  margin-left: 11px;
 
   background-color: #eeeeee;
-
   border-radius: 3px;
-
 }
 
 .breadcrumbs-item a {
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
   text-align: center;
-  text-transform: uppercase;
-
   color: #000000;
+  text-transform: uppercase;
 }
 
 .breadcrumbs-item:last-child {
@@ -1384,17 +1408,15 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-item:active {
-  opacity: 0.3;
-
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  opacity: 0.3;
 }
 
 .active-breadcrumbs {
-  margin: 0;
-
   width: 44px;
   height: 44px;
+  margin: 0;
 
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
@@ -1410,106 +1432,176 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-
 }
 
 .catalog-footer b {
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
   color: #000000;
 }
 
 /* Модальные окна */
 
 .modal {
-  display: none;
+  position: fixed;
+
+  color: #000000;
+
+  background-color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-feedback {
+  top: 100px;
+  left: 50%;
+
   width: 960px;
   min-height: 590px;
+  margin-left: -466px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
 
   background-color: #ffffff;
-  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/svg/close-cross.svg");
+  opacity: 0.3;
+}
+
+.modal-close:hover::before {
+  opacity: 1;
+}
+
+.modal-close:active::before {
+  opacity: 0.1;
+}
+
 
 .modal-window {
   width: 760px;
-
-  padding-top: 70px;
-  padding-left: 100px;
-  padding-bottom: 84px;
+  margin-top: 67px;
+  margin-bottom: 84px;
+  margin-left: 99px;
 }
 
 .modal-window h2 {
   display: block;
-  margin-bottom: 49px;
+  margin-top: 0;
+  margin-bottom: 41px;
 
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
   text-align: left;
-
   color: #000000;
 }
 
 .modal-form-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 
+  list-style: none;
 }
 
 .modal-form-item label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
   text-align: left;
-
   color: #000000;
 }
 
 .modal-form-item input[type="text"],
 .modal-form-item input[type="email"] {
+  box-sizing: border-box;
   width: 360px;
   min-height: 50px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 14px;
 
-  outline: none;
+  font: inherit;
+  color: #d7dcde;
 
+  background-color: #ffffff;
   border: solid 2px #d7dcde;
   border-radius: 3px;
+  outline: none;
 }
 
 .modal-form-item textarea {
-  width: 753px;
+  box-sizing: border-box;
+  width: 760px;
   min-height: 118px;
-  margin-bottom: 47px;
-  resize: none;
+  margin-bottom: 40px;
+  padding-top: 8px;
+  padding-left: 13px;
 
-  outline: none;
+  font: inherit;
+  color: rgba(68, 68, 68, 0.5);
 
+  background-color: #ffffff;
   border: solid 2px #d7dcde;
   border-radius: 3px;
+  outline: none;
+
+  resize: none;
 }
 
-.modal-form-item input[type="text"]::placeholder,/*не работает(*/
-.modal-form-item input[type="email"]::placeholder,
-.modal-form-item textarea::placeholder {
-  margin-left: 15px;
-  margin-top: 15px;
+.modal-form-item input[type="text"]:hover,
+.modal-form-item input[type="email"]:hover,
+.modal-form-item textarea:hover {
+  border: 2px solid #b4b9bb;
+}
 
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  color: rgba(68, 68, 68, 0.5);
+.modal-form-item input[type="text"]:focus,
+.modal-form-item input[type="email"]:focus,
+.modal-form-item textarea:focus {
+  color: #000000;
+
+  border: 2px solid #000000;
+}
+
+.modal-form-item input[type="text"]:invalid,
+.modal-form-item input[type="email"]:invalid,
+.modal-form-item textarea:invalid {
+  color: #e74246;
+
+  border: 2px solid #e74246;
 }
 
 .button-modal {
-  padding: 19px 84px 18px 82px;
+  padding: 17px 83px 15px 85px;
+
+  outline: none;
 }
