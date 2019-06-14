@@ -71,7 +71,7 @@
             <p>
               Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <a class="button web-button" href="#">Заказать</a>
+            <a class="button web-button features-button" href="#">Заказать</a>
           </li>
           <li class="features-item">
             <img class="features-img" src="img/features-app.png" width="300" height="146"
@@ -80,7 +80,7 @@
             <p>
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <a class="button app-button" href="#">Заказать</a>
+            <a class="button app-button features-button" href="#">Заказать</a>
           </li>
           <li class="features-item">
             <img class="features-img" src="img/features-pres.png" width="300" height="146" alt="Стэнд с презентацией">
@@ -88,7 +88,7 @@
             <p>
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
-            <a class="button pres-button" href="#">Заказать</a>
+            <a class="button pres-button features-button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -116,8 +116,6 @@
           </li>
         </ul>
 
-
-        <!-- есть еще вопрос по этому списку, в макете там красные черточки перед элементами списка, их наверное лучше сделать потом фоном через CSS? -->
       </section>
       <section class="business-card">
         <h2 class="visually-hidden">Результативность компании</h2>
@@ -170,6 +168,7 @@
   </main>
 
   <footer class="main-footer">
+    <div class="map"></div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2972815829219!2d30.32221426298569!3d59.938869530870676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1512314120695"
       style="border:0" allowfullscreen width="100%" height="416" frameborder="0"></iframe>
@@ -228,15 +227,18 @@
       <ul class="modal-form-list">
         <li class="modal-form-item">
           <label for="name-field">Ваше имя:</label>
-          <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" aria-required="true">
+          <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия" autocomplete="on"
+            aria-required="true">
         </li>
         <li class="modal-form-item">
           <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="user-email" id="email-field" placeholder="email@example.com" autocomplete="on" aria-required="true">
+          <input type="email" name="user-email" id="email-field" placeholder="email@example.com" autocomplete="on"
+            aria-required="true">
         </li>
         <li class="modal-form-item">
           <label for="letter-field">Текст письма:</label>
-          <textarea name="feedback-letter" id="letter-field" placeholder="В свободной форме" aria-required="true"></textarea>
+          <textarea name="feedback-letter" id="letter-field" placeholder="В свободной форме"
+            aria-required="true"></textarea>
         </li>
       </ul>
       <button class="button button-modal" type="submit">Отправить</button>
@@ -244,9 +246,7 @@
     </form>
   </section>
 
-  <script>
-
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 
