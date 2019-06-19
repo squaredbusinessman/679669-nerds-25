@@ -679,7 +679,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
 }
 
-.map {
+.interactive-map {
   position: relative;
 
   width: 100%;

@@ -1,4 +1,5 @@
 //скрпит для модального окна с фидбеком
+
 var link = document.querySelector(".map-modal-button");
 
 var popup = document.querySelector(".modal-feedback");
@@ -59,3 +60,13 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+//Скрипт интерактивной карты
+
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 59.938733, lng: 30.323047},
+          zoom: 18
+        });
+      }
