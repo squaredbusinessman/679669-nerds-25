@@ -55,7 +55,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   font-weight: 500;
   line-height: 18px;
-  vertical-align: middle;
+  vertical-align: center;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -199,6 +199,7 @@ input[type="radio"].visually-hidden {
 
   transform: translateX(-50%);
 }
+
 .slider-controls label {
   position: relative;
 
@@ -206,6 +207,8 @@ input[type="radio"].visually-hidden {
   width: 18px;
   height: 18px;
   padding: 8px;
+
+  vertical-align: center;
 
   border-radius: 50%;
   cursor: pointer;
@@ -428,17 +431,16 @@ input[type="radio"].visually-hidden {
 .index-colums {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 70px 0;
+  padding: 40px 0 72px 0;
 }
 
 .about-company {
   width: 660px;
-  margin-top: 34px;
+  margin-top: 20px;
 }
 
-.presentation-item > p {
-  margin: 0;
-  padding: 0;
+.about-company p {
+  margin-bottom: 33px;
 }
 
 .about-company b {
@@ -448,23 +450,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.presentation-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.presentation-list .phrase {
-  margin-bottom: 33px;
-}
-
-.presentation-list .pres-description {
-  margin-bottom: 39px;
-}
-
-.presentation-item .description {
-  margin-bottom: 24px;
+.about-company .description {
+  margin-top: 38px;
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: 16px;
@@ -491,7 +479,6 @@ input[type="radio"].visually-hidden {
 }
 
 .shedule-list li::before {
-  /* не работает это дело*/
   content: "";
   position: absolute;
   top: 11px;
@@ -507,15 +494,9 @@ input[type="radio"].visually-hidden {
   width: 360px;
 }
 
-.business-card-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.business-card-item p {
-  margin-bottom: 34px;
+.business-card p {
+  margin-top: 31px;
+  margin-bottom: 37px;
 
   font-weight: 700;
   font-size: 16px;
@@ -529,9 +510,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 14px;
 }
 
-.business-card-table {
+.business-card-table tbody {
   display: flex;
   flex-direction: column;
+  margin-left: -3px;
 }
 
 .company-skills {
@@ -552,7 +534,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company-results td:first-child {
-  padding-left: 0;
+  padding-left: 1px;
 }
 
 .company-results td {
@@ -569,7 +551,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company-skills th:nth-child(2) {
-  padding-left: 13px;
+  padding-left: 19px;
 }
 
 .company-skills th:last-child {
@@ -592,6 +574,7 @@ input[type="radio"].visually-hidden {
 /* следующий блок с партнерами/клиентами*/
 
 .partners {
+  margin-right: 8px;
   margin-bottom: 80px;
 }
 
@@ -629,10 +612,12 @@ input[type="radio"].visually-hidden {
   height: 52px;
   margin-top: -26px;
 
+  vertical-align: center;
+
   background-color: #d7dcde;
 }
 
-.partner-logo:last-child:after {
+.partner-logo:nth-child(4n):after {
   display: none;
 }
 
@@ -648,8 +633,14 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.partner-logo:last-child {
-  align-self: unset;
+.partner-logo:nth-child(4n) {
+  position: relative;
+}
+
+.partner-logo:nth-child(4n+1) {
+  position: relative;
+  top: 5px;
+  right: 5px;
 }
 
 /* --------------------------------------- футер --------------------------------------------*/
@@ -686,27 +677,16 @@ input[type="radio"].visually-hidden {
   height: 416px;
 }
 
-.map::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .map-contacts {
   position: absolute;
-  top: -370px;
+  top: -363px;
   left: -410px;
 
   display: flex;
   flex-direction: column;
   width: 220px;
   height: 210px;
-  padding: 50px;
+  padding: 51px;
 
   background-color: #ffffff;
 }
@@ -970,6 +950,7 @@ input[type="radio"].visually-hidden {
   width: 50%;
 
   font-size: 16px;
+  vertical-align: center;
   text-transform: uppercase;
 }
 
@@ -1230,6 +1211,8 @@ input[type="radio"].visually-hidden {
 .catalog-sorting a {
   display: inline-block;
   margin-right: 25px;
+
+  vertical-align: center;
 }
 
 .catalog-sorting a:nth-child(3) {
@@ -1310,6 +1293,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 33px;
 
   font-size: 0;
+  vertical-align: center;
 
   background-color: #ffffff;
 }

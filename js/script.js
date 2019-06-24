@@ -66,7 +66,15 @@ window.addEventListener("keydown", function (evt) {
 var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.938733, lng: 30.323047},
-          zoom: 18
+          center: {lat: 59.938923, lng: 30.322240},
+          zoom: 18,
+          disableDefaultUI: true
+        });
+
+        var image = '../679669-nerds-25/img/map-marker.png';
+        var beachMarker = new google.maps.Marker({
+          position: new google.maps.LatLng(59.938733, 30.3234),
+          map: map,
+          icon: image
         });
       }
