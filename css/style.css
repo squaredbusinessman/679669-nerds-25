@@ -646,9 +646,10 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   width: 25%;
+  min-height: 97px;
 }
 
-.partners-logo::after {
+.partner-logo:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -664,14 +665,8 @@ input[type="radio"].visually-hidden {
   background-color: #d7dcde;
 }
 
-.partner-logo:nth-child(4n)::after {
+.partner-logo:nth-child(4n):after {
   display: none;
-}
-
-.partner-logo:nth-child(4n+1)::after {
-  position: relative;
-  top: 50%;
-  right: -47px;
 }
 
 .partner-logo img {
@@ -685,7 +680,7 @@ input[type="radio"].visually-hidden {
 .partner-logo img:active {
   opacity: 0.1;
 }
-
+/*
 .partner-logo:nth-child(4n+1) {
   position: relative;
   top: 9px;
@@ -697,7 +692,7 @@ input[type="radio"].visually-hidden {
   top: 8px;
   right: -2px;
 }
-
+*/
 /* --------------------------------------- футер --------------------------------------------*/
 
 .main-footer,
@@ -725,6 +720,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 69px;
 }
 
+
 .interactive-map {
   position: relative;
 
@@ -733,12 +729,10 @@ input[type="radio"].visually-hidden {
 }
 
 .interactive-map img {
-  position: relative;
-  top: -2px;
-  left: 552px;
-
+  display: block;
   width: 1440px;
   height: 416px;
+  margin: 0 auto;
 }
 
 .map-contacts {
@@ -755,7 +749,7 @@ input[type="radio"].visually-hidden {
       flex-direction: column;
   width: 220px;
   height: 210px;
-  padding: 51px;
+  padding: 51px 48px 47px 51px;
 
   background-color: #ffffff;
 }
@@ -1047,7 +1041,7 @@ input[type="radio"].visually-hidden {
   padding: 8px 10px;
 
   font-size: 16px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   text-align: center;
   color: #283136;
 
@@ -1462,8 +1456,8 @@ input[type="radio"].visually-hidden {
 .card-hover-flex h3 {
   width: 115px;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  margin-top: 28px;
+  margin-bottom: 16px;
 }
 
 .card-hover-flex p {
@@ -1481,6 +1475,14 @@ input[type="radio"].visually-hidden {
   padding-top: 19px;
   padding-bottom: 18px;
 }
+
+.sedona .card-description,
+.borodinski .card-description,
+.mishka .card-description {
+  width: 199px;
+}
+
+
 /* "браузер" вокруг карточек товаров */
 
 .browser-card {
