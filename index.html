@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,9 +36,9 @@
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
-          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+          <label class="slider-controls-item slider-controls-item--1" for="product-1" tabindex="0">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2" tabindex="0">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3" tabindex="0">Третий</label>
         </div>
         <ul class="slider-list">
           <li class="slider-item">
@@ -132,17 +132,25 @@
         <h2 class="visually-hidden">Наши партнёры</h2>
         <ul class="partners-list">
           <li class="partner-logo">
-            <img src="img/partners-academy.png" width="199" height="68" alt="логотип компании html-academy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/partners-academy.png" width="199" height="68" alt="логотип компании html-academy">
+            </a>
           </li>
           <li class="partner-logo borodinski-logo">
-            <img class="borodinski" src="img/partners-borodinski.png" width="209" height="90"
-              alt="логотип компании barbershop-borodinski">
+            <a>
+              <img class="borodinski" src="img/partners-borodinski.png" width="209" height="90"
+                alt="логотип компании barbershop-borodinski">
+            </a>
           </li>
           <li class="partner-logo pink-logo">
-            <img class="pink" src="img/partners-pink.png" width="185" height="52" alt="логотип компании pink">
+            <a>
+              <img class="pink" src="img/partners-pink.png" width="185" height="52" alt="логотип компании pink">
+            </a>
           </li>
           <li class="partner-logo">
-            <img class="mishka" src="img/partners-mishka.png" width="173" height="84" alt="логотип компании mishka">
+            <a>
+              <img class="mishka" src="img/partners-mishka.png" width="173" height="84" alt="логотип компании mishka">
+            </a>
           </li>
         </ul>
       </section>
@@ -150,7 +158,9 @@
   </main>
 
   <footer class="main-footer">
-    <div class="interactive-map" id="map"></div>
+    <div class="interactive-map" id="map">
+      <img src="img/map.png" width="1440" height="416" alt="схема-проезда">
+    </div>
     <div class="container map-container">
       <div class="map-contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
@@ -162,7 +172,7 @@
             <a class="tel-number" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
           </li>
           <li class="map-contacts-item">
-            <a class="button map-modal-button" href="#">Напишите нам</a>
+            <a class="button map-modal-button" href="writeus.html">Напишите нам</a>
           </li>
         </ul>
       </div>

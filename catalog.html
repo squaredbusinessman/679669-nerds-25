@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -99,25 +99,28 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button catalog-form-button" type="submit">Показать</button>
+          <button class="button catalog-form-button" type="submit"
+            aria-label="Применить выбранные фильтры">Показать</button>
         </form>
       </section>
       <div class="catalog-cards-grid">
         <section class="catalog-sorting">
           <p>Сортировать:</p>
-          <a class="sorting active-sort" href="#">По цене</a>
-          <a class="sorting" href="#">По типу</a>
-          <a class="sorting" href="#">По названию</a>
+          <div class="sorter">
+            <a class="sorting active-sort" href="#">По цене</a>
+            <a class="sorting" href="#">По типу</a>
+            <a class="sorting" href="#">По названию</a>
+          </div>
           <ul class="sorting-list">
             <li class="sorting-item active-sorting">
-              <a class="sorting-dir" href="#">
+              <a class="sorting-dir" href="#" aria-label="сортировка по-убыванию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path fill="#231F20" d="M5.5 10L0 0h11" />
                 </svg>
               </a>
             </li>
             <li class="sorting-item">
-              <a class="sorting-dir" href="#">
+              <a class="sorting-dir" href="#" aria-label="сортировка по-возрастанию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path fill="#231F20" d="M5.5 0L0 10h11z" />
                 </svg>
@@ -227,7 +230,9 @@
   </main>
 
   <footer class="catalog-footer">
-    <div class="interactive-map" id="map"></div>
+    <div class="interactive-map" id="map">
+      <img src="img/map.png" width="1440" height="416" alt="схема-проезда">
+    </div>
     <div class="container map-container">
       <div class="map-contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
@@ -239,7 +244,7 @@
             <a class="tel-number" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
           </li>
           <li class="map-contacts-item">
-            <a class="button map-modal-button" href="#">Напишите нам</a>
+            <a class="button map-modal-button" href="writeus.html">Напишите нам</a>
           </li>
         </ul>
       </div>
